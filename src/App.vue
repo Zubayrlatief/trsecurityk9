@@ -19,6 +19,7 @@ component: {
 .button{
   background-color: EB691D;
   color: EB691D;
+  font-family: 'Source Code Pro', monospace;
 }
 
 h1, h2, h3, h4, h5, h6 {
