@@ -9,16 +9,19 @@
     </div>
   </div>
   </div>
+  <MissionComp/>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
 import NavbarComp from '@/components/NavbarComp.vue';
+import MissionComp from '@/components/MissionComp.vue';
 
 export default defineComponent({
   name: 'LandingpageView',
   components: {
     NavbarComp,
+    MissionComp
   },
   data() {
     return {
