@@ -163,6 +163,8 @@ h1 span {
 
 .content {
   text-align: center;
+  display: flex;
+  flex-direction: column;
   max-width: 90%; /* Optional: constrain text width */
 }
 
