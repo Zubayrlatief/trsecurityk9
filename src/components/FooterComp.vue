@@ -1,7 +1,7 @@
 <template lang="">
     <div>
         <!-- Footer -->
-<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+<footer id="main-container" class="text-center text-lg-start  text-muted">
   <!-- Section: Social media -->
   <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
     <!-- Left -->
@@ -129,6 +129,13 @@ export default {
   name: 'FooterComp',
 };
 </script>
-<style lang="">
+<style scoped>
+#main-container{
+    background-color: black
+}
+
+i,p,h1,h2,h3,h4,h5,h6,span, div{
+    color :white;
+}
     
 </style>

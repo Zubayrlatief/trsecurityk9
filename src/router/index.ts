@@ -5,6 +5,7 @@ import AlarmMonitoringView from '@/views/AlarmMonitoringView.vue'
 import ElectricFencingView from '@/views/ElectricFencingView.vue'
 import RIASecurityView from '@/views/RIASecurityView.vue'
 import K9HandlingView from '@/views/K9HandlingView.vue'
+import ContactView from '@/views/ContactView.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -36,6 +37,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/K9HandlingView',
     name: 'K9Handling',
     component: K9HandlingView
+  },
+  {
+    path: '/ContactView',
+    name: 'ContactView',
+    component: ContactView
   },
 ]
 

@@ -4,16 +4,18 @@
     <div class="main">
       <img class="img" :src="img" alt="TR Security K9" />
       <div class="container-main">
-      <h1>YOUR 24/7 SECURITY IS OUR PRIORITY </h1>
-      <button class="button">GET IN TOUCH</button>
+        <h1>YOUR 24/7 SECURITY IS OUR PRIORITY</h1>
+        <button @click="navigateToContact" class="button">GET IN TOUCH</button>
+      </div>
     </div>
   </div>
-  </div>
-  <MissionComp/>
+  <MissionComp />
+  <FooterComp/>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import { useRouter } from 'vue-router';
 import NavbarComp from '@/components/NavbarComp.vue';
 import MissionComp from '@/components/MissionComp.vue';
 import FooterComp from '@/components/FooterComp.vue';
@@ -21,16 +23,25 @@ import FooterComp from '@/components/FooterComp.vue';
 export default defineComponent({
   name: 'LandingpageView',
   components: {
+    NavbarComp,
     MissionComp,
-    FooterComp
+    FooterComp,
   },
   data() {
     return {
       img: 'https://zubayrlatief.github.io/Images-/landingtrsecurityk9.jpg',
     };
   },
+  setup() {
+    const router = useRouter();
+    const navigateToContact = () => {
+      router.push('/ContactView');
+    };
+    return { navigateToContact };
+  },
 });
 </script>
+
 
 <style scoped>
 .main{
