@@ -1,7 +1,9 @@
 <template lang="">
+    <NavbarComp/>
     <div>
         
     </div>
+    <FooterComp/>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
