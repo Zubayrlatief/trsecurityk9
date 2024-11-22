@@ -1,5 +1,10 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import LandingpageView from '@/views/LandingpageView.vue'
+import ArmedResponseView from '@/views/ArmedResponseView.vue'
+import AlarmMonitoringView from '@/views/AlarmMonitoringView.vue'
+import ElectricFencingView from '@/views/ElectricFencingView.vue'
+import RIASecurityView from '@/views/RIASecurityView.vue'
+import K9HandlingView from '@/views/K9HandlingView.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -10,27 +15,27 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/AlarmMonitoringView',
     name: 'AlarmMonitoringView',
-    component: LandingpageView
+    component: AlarmMonitoringView
   },
   {
-    path: '/AlarmMonitoring',
-    name: 'AlarmMonitoringView',
-    component: LandingpageView
+    path: '/ArmedResponseView',
+    name: 'ArmedResponseView',
+    component: ArmedResponseView
   },
   {
-    path: '/',
-    name: 'landingpageView',
-    component: LandingpageView
+    path: '/ElectricFencing',
+    name: 'ElectricFencing',
+    component: ElectricFencingView
   },
   {
-    path: '/',
-    name: 'landingpageView',
-    component: LandingpageView
+    path: '/RIASecurityView',
+    name: 'RIASecurityview',
+    component: RIASecurityView
   },
   {
-    path: '/',
-    name: 'landingpageView',
-    component: LandingpageView
+    path: '/K9HandlingView',
+    name: 'K9Handling',
+    component: K9HandlingView
   },
 ]
 
