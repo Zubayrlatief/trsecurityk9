@@ -7,6 +7,31 @@ const routes: Array<RouteRecordRaw> = [
     name: 'landingpageView',
     component: LandingpageView
   },
+  {
+    path: '/AlarmMonitoringView',
+    name: 'AlarmMonitoringView',
+    component: LandingpageView
+  },
+  {
+    path: '/AlarmMonitoring',
+    name: 'AlarmMonitoringView',
+    component: LandingpageView
+  },
+  {
+    path: '/',
+    name: 'landingpageView',
+    component: LandingpageView
+  },
+  {
+    path: '/',
+    name: 'landingpageView',
+    component: LandingpageView
+  },
+  {
+    path: '/',
+    name: 'landingpageView',
+    component: LandingpageView
+  },
 ]
 
 const router = createRouter({
