@@ -44,12 +44,8 @@
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           <!-- Content -->
           <h6 class="text-uppercase fw-bold mb-4">
-            <i class="fas fa-gem me-3"></i>Company name
+            <i class="fas fa-gem me-3"></i>TR SECURITY K9
           </h6>
-          <p>
-            Here you can use rows and columns to organize your footer content. Lorem ipsum
-            dolor sit amet, consectetur adipisicing elit.
-          </p>
         </div>
         <!-- Grid column -->
 
@@ -59,17 +55,15 @@
           <h6 class="text-uppercase fw-bold mb-4">
             Products
           </h6>
+          
           <p>
-            <a href="#!" class="text-reset">Angular</a>
+            <a href="/" class="text-reset">Home</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">React</a>
+            <a href="/AlarmMonitoringView" class="text-reset">Alarm Monitoring</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Vue</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Laravel</a>
+            <a href="/ElectricFencingView" class="text-reset">Electric Fencing</a>
           </p>
         </div>
         <!-- Grid column -->
@@ -81,16 +75,13 @@
             Useful links
           </h6>
           <p>
-            <a href="#!" class="text-reset">Pricing</a>
+            <a href="/ArmedResponseView" class="text-reset">Armed Response</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Settings</a>
+            <a href="/k9HandlingView" class="text-reset">K9 Handling</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Orders</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Help</a>
+            <a href="/RIASecurityView" class="text-reset">Residential/Industrial<br>/Agricultural</a>
           </p>
         </div>
         <!-- Grid column -->

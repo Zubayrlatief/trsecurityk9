@@ -5,32 +5,29 @@
       <img class="img" :src="img" alt="TR Security K9" />
       <div class="container-main">
         <div class="heading-container">
-          <h1>
-            Unmatched Armed Response Services
-          </h1>
+          <h1>Unmatched Armed Response Services</h1>
         </div>
       </div>
-      <!-- Boxes over the image -->
+      <!-- Boxes overlay -->
       <div class="boxes-overlay">
         <div class="box hidden">
           <div class="content">
-"Unmatched Armed Response Services: Protecting Your Home, Business, and Assets with Rapid, Professional, and Reliable Security Solutions 24/7."
-            <button class="box-button">Learn More</button>
+            "Unmatched Armed Response Services: Protecting Your Home, Business, and Assets with Rapid, Professional, and Reliable Security Solutions 24/7."
           </div>
         </div>
         <div class="box hidden">
           <div class="content">
             K9 handling services utilize trained dogs for detection, patrol, and protection, offering enhanced security solutions for businesses and critical sites.
-            <button class="box-button">Learn More</button>
           </div>
         </div>
         <div class="box hidden">
           <div class="content">
             Security installation services provide expert setup of advanced systems, including alarms, CCTV, and access control, ensuring comprehensive protection for properties.
-            <button class="box-button">Learn More</button>
           </div>
         </div>
       </div>
+      <!-- Contact Us Button -->
+      <button class="main-button" @click="navigateToContact">Contact Us Today</button>
     </div>
   </div>
   <FooterComp />
@@ -59,7 +56,8 @@ export default defineComponent({
       router.push('/ContactView');
     };
 
-    let observer;
+    let observer: IntersectionObserver | null = null;
+
     onMounted(() => {
       observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
@@ -72,17 +70,20 @@ export default defineComponent({
       });
 
       const hiddenElements = document.querySelectorAll('.hidden');
-      hiddenElements.forEach((el) => observer.observe(el));
+      hiddenElements.forEach((el) => observer?.observe(el));
     });
 
     onBeforeUnmount(() => {
-      if (observer) observer.disconnect();
+      if (observer) {
+        observer.disconnect();
+      }
     });
 
     return { navigateToContact };
   },
 });
 </script>
+
 <style scoped>
 /* General layout */
 .main {
@@ -90,7 +91,8 @@ export default defineComponent({
 }
 .img {
   width: 100%;
-  height: 170vh;
+  height: 100vh; /* Adjusted for responsiveness */
+  object-fit: cover;
 }
 .container-main {
   position: absolute;
@@ -105,15 +107,10 @@ export default defineComponent({
 .heading-container {
   max-width: 800px;
   margin: 0 auto;
-  background-color: rgba(0, 0, 0, 0.1); /* Semi-transparent black */
-  backdrop-filter: blur(9px); /* Adds a blur effect */
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9px);
   padding: 50px;
   border-radius: 10px;
-}
-
-/* Remove button styles */
-button {
-  display: none;
 }
 
 /* Boxes overlay */
@@ -126,18 +123,18 @@ button {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  z-index: 1; /* Below text and button but above the image */
+  z-index: 1;
   width: 80%;
 }
 .box {
-  flex: 1 1 calc(30% - 20px); /* Responsive sizing */
-  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+  flex: 1 1 calc(30% - 20px);
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 20px;
   border-radius: 10px;
   color: rgb(194, 190, 190);
   text-align: center;
-  opacity: 0; /* Hidden initially */
-  transform: translateY(50px); /* Slide up effect */
+  opacity: 0;
+  transform: translateY(50px);
   transition: all 0.6s ease;
 }
 .hidden.show {
@@ -145,36 +142,33 @@ button {
   transform: translateY(0);
 }
 
-/* Box button styling */
-.box-button {
-  margin-top: 15px;
-  padding: 10px 30px;
-  background-color: #eb691d;
-  color: black;
+/* Button styling */
+.main-button {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  padding: 15px 50px;
   font-weight: bold;
+  background-color: #eb691d;
+  color: rgb(0, 0, 0);
   border: none;
   cursor: pointer;
-  font-size: 1rem;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  transition: all 0.3s ease-in-out;
 }
-.box-button:hover {
-  transform: scale(1.05);
-  background-color: #ff7a3c;
-}
-
-h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  color: rgb(156, 156, 156);
-  font-family: 'Source Code Pro', monospace;
+.main-button:hover {
+  background-color: #552a10;
+  color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 /* Responsive adjustments */
 @media (max-width: 900px) {
   .container-main {
     top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
     font-size: 1rem;
   }
   h1 {
@@ -184,7 +178,38 @@ h1 {
     flex-direction: column;
   }
   .box {
-    flex: 1 1 100%; /* Stack boxes vertically */
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .container-main {
+    top: 5%;
+  }
+  .heading-container {
+    padding: 30px;
+  }
+  .main-button {
+    font-size: 1.2rem;
+    padding: 10px 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+  .boxes-overlay {
+    width: 100%;
+    gap: 10px;
+  }
+  .box {
+    padding: 10px;
+    font-size: 0.8rem;
+  }
+  .main-button {
+    font-size: 1rem;
+    padding: 8px 20px;
   }
 }
 </style>
