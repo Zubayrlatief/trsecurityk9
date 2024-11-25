@@ -1,22 +1,24 @@
 <template>
-  <div class="container">
+  <div class="container-heading">
     <h1>WHAT WE DELIVER ON</h1>
+  </div>
+  <div class="container">
     <div class="boxes">
       <div class="box hidden">
         <div class="content">
-          Our mission is to deliver professional and dependable security solutions to our clients. We strive to foster growth while ensuring peace of mind for the communities and businesses we serve.
+          Armed response services ensure rapid, professional protection against threats, providing highly trained personnel to safeguard businesses, homes, and critical assets.
           <button class="box-button">Learn More</button>
         </div>
       </div>
       <div class="box hidden">
         <div class="content">
-          This is the second box.
+          K9 handling services utilize trained dogs for detection, patrol, and protection, offering enhanced security solutions for businesses and critical sites.
           <button class="box-button">Learn More</button>
         </div>
       </div>
       <div class="box hidden">
         <div class="content">
-          This is the third box.
+          Security installation services provide expert setup of advanced systems, including alarms, CCTV, and access control, ensuring comprehensive protection for properties.
           <button class="box-button">Learn More</button>
         </div>
       </div>
@@ -83,6 +85,8 @@ h1 {
   display: inline-block;
   transition: all 0.5s ease;
   text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 h1 span {
@@ -144,16 +148,18 @@ h1 span {
 }
 
 .box-button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #e35e11;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  font-weight: bold;
+  margin-top: 3rem;
+  padding: 5px 30px;
+  font-weight: 900;
+  background-color: #EB691D;
+  color: rgb(0, 0, 0);
+  border-style: black;
   cursor: pointer;
+  transform: skew(25deg);
+  transition: all 0.5 ease;
+  font-size: 1.75rem;
   transition: background-color 0.3s ease, transform 0.3s ease;
+  font-family: 'Source Code Pro', monospace;
 }
 
 .box-button:hover {
@@ -164,8 +170,20 @@ h1 span {
 .content {
   text-align: center;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   max-width: 90%; /* Optional: constrain text width */
+}
+
+.container-heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:   #e35e11;
+  width: 100%;
+  border: #000000;
+  
 }
 
 @media (max-width: 700px) {
