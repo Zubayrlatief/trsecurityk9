@@ -91,7 +91,7 @@ export default defineComponent({
 }
 .img {
   width: 100%;
-  height: 100vh; /* Adjusted for responsiveness */
+  height: 190vh; /* Adjusted for responsiveness */
   object-fit: cover;
 }
 .container-main {
@@ -184,7 +184,6 @@ export default defineComponent({
 
 @media (max-width: 600px) {
   .container-main {
-    top: 5%;
   }
   .heading-container {
     padding: 30px;
@@ -196,6 +195,7 @@ export default defineComponent({
 }
 
 @media (max-width: 400px) {
+
   h1 {
     font-size: 1.2rem;
   }
@@ -210,6 +210,13 @@ export default defineComponent({
   .main-button {
     font-size: 1rem;
     padding: 8px 20px;
+  }
+  .heading-container{
+    padding: 8px 10px;
+  }
+  .main-button{
+    position: absolute;
+    top: 90%;
   }
 }
 </style>

@@ -10,7 +10,7 @@ import ContactView from '@/views/ContactView.vue'
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    name: 'landingpageView',
+    name: 'LandingpageView',
     component: LandingpageView
   },
   {
@@ -30,7 +30,7 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/RIASecurityView',
-    name: 'RIASecurityview',
+    name: 'RIASecurityView',
     component: RIASecurityView
   },
   {
