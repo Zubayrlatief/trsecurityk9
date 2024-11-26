@@ -49,8 +49,7 @@
               SECURITY SYSTEMS
             </a>
             <ul class="dropdown-menu" aria-labelledby="systemsDropdown">
-              <li><a class="dropdown-item" href="/AlarmMonitoringView">ALARM MONITORING</a></li>
-              <li><a class="dropdown-item" href="/ElectricFencingView">ELECTRIC FENCING</a></li>
+              <li><a class="dropdown-item" href="/SecuritySystemsView">ALARM MONITORING/ELECTRIC FENCING</a></li>
             </ul>
           </li>
           <li class="nav-item">
