@@ -2,12 +2,18 @@
   <NavbarComp />
   <div id="landing">
     <div class="main">
-      <img class="img" :src="img" alt="TR Security K9" />
+      <!-- Image Container -->
+      <div class="image-container">
+        <img class="img" :src="img1" alt="TR Security K9" />
+        <img class="img" :src="img2" alt="Additional Image" />
+      </div>
+      
       <div class="container-main">
         <div class="heading-container">
           <h1>Unmatched Armed Response Services</h1>
         </div>
       </div>
+
       <!-- Boxes overlay -->
       <div class="boxes-overlay">
         <div class="box hidden">
@@ -26,12 +32,15 @@
           </div>
         </div>
       </div>
+      
       <!-- Contact Us Button -->
       <button class="main-button" @click="navigateToContact">Contact Us Today</button>
     </div>
   </div>
   <FooterComp />
 </template>
+
+
 
 <script lang="ts">
 import { defineComponent, onMounted, onBeforeUnmount } from 'vue';
@@ -47,7 +56,8 @@ export default defineComponent({
   },
   data() {
     return {
-      img: 'https://zubayrlatief.github.io/Images-/453209260_820975970014760_7992647634388668027_n%20(1).jpg',
+      img1: 'https://zubayrlatief.github.io/Images-/453209260_820975970014760_7992647634388668027_n%20(1).jpg',
+      img2: 'https://zubayrlatief.github.io/Images-/335061946_227326069704609_1086594109604870972_n.jpg',
     };
   },
   setup() {
@@ -84,16 +94,13 @@ export default defineComponent({
 });
 </script>
 
+
 <style scoped>
 /* General layout */
 .main {
   position: relative;
 }
-.img {
-  width: 100%;
-  height: 190vh; /* Adjusted for responsiveness */
-  object-fit: cover;
-}
+
 .container-main {
   position: absolute;
   top: 30%;
@@ -141,7 +148,9 @@ export default defineComponent({
   opacity: 1;
   transform: translateY(0);
 }
-
+.img{
+  width: 50%;
+}
 /* Button styling */
 .main-button {
   position: absolute;
@@ -167,9 +176,13 @@ export default defineComponent({
 
 /* Responsive adjustments */
 @media (max-width: 900px) {
+  .img{
+    height: 100vh;
+  }
   .container-main {
     top: 10%;
-    font-size: 1rem;
+    padding: 2px;
+    font-size: 0.4rem;
   }
   h1 {
     font-size: 1.5rem;
@@ -179,6 +192,9 @@ export default defineComponent({
   }
   .box {
     flex: 1 1 100%;
+  }
+  .main-button{
+    padding: 2px;
   }
 }
 
@@ -195,28 +211,33 @@ export default defineComponent({
 }
 
 @media (max-width: 400px) {
-
+  .img{
+    height: 55vh;
+  }
   h1 {
-    font-size: 1.2rem;
+    font-size: 0.6rem;
+    margin-top: 8%;
   }
   .boxes-overlay {
     width: 100%;
-    gap: 10px;
+    margin-bottom: 5%;
+    gap: 5px;
   }
   .box {
-    padding: 10px;
-    font-size: 0.8rem;
+    padding: 2px;
+    font-size: 0.5rem;
   }
   .main-button {
     font-size: 1rem;
     padding: 8px 20px;
   }
   .heading-container{
-    padding: 8px 10px;
+    padding: 1px 1px;
   }
   .main-button{
     position: absolute;
-    top: 90%;
+    top: 85%;
+    padding: 2px;
   }
 }
 </style>
