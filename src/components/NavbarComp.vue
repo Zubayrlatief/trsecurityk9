@@ -18,7 +18,7 @@
       <div class="collapse navbar-collapse " id="navbarNav">
         <ul class="navbar-nav mx-auto text-center ">
           <li class="nav-item">
-            <a class="nav-link" href="#ourmission">OUR MISSION</a>
+            <a class="nav-link" href="/">OUR MISSION</a>
           </li>
           <li class="nav-item dropdown">
             <a

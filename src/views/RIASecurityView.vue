@@ -34,24 +34,16 @@
 
       <div class="d-flex">
   <div class="p-2 flex-fill box hidden bg-black">
-    <h3>OUR STATEMET</h3>
+    <h3>Protecting Industry and Homes with Excellence
+    </h3>
     <p>
-      Ensure the safety of your home and family with our Residential Guarding Service. 
-      Our trained guards provide visible deterrence, patrols, and access control to 
-      maintain a secure environment. Count on us for swift incident response and 
-      personalized security, offering peace of mind and a safe haven for you and your 
-      loved ones.
+      Our security company is dedicated to safeguarding both industrial and residential properties with unmatched expertise. For industrial security, we provide customized solutions to protect your facilities, equipment, and workforce. Our trained professionals ensure access control, perimeter protection, and surveillance to prevent unauthorized access and maintain operational integrity. In residential security, we prioritize your family’s safety by offering vigilant patrols, access control, and visible deterrence to create a secure environment. Trust us to deliver peace of mind through our proactive and responsive services tailored to meet your unique security needs.
     </p>
   </div>
   <div class="p-2 flex-fill box hidden bg-black">
-    <h3>Our Trusted Services</h3>
-    <h4></h4>
+    <h3>Securing Farms and Agricultural Assets</h3>
     <p>
-      Protect your agricultural assets with our specialized Agricultural Guarding 
-      Service. Our trained guards ensure the safety of your property, livestock, 
-      and equipment through perimeter monitoring, access control, and surveillance. 
-      Count on us to deter theft, vandalism, and trespassing, so you can focus on 
-      farming with peace of mind.
+      Agricultural security is vital to protect the backbone of our economy—our farms and resources. Our specialized agricultural guarding services are designed to safeguard your property, livestock, and equipment against theft, vandalism, and trespassing. With a deep understanding of the agricultural industry, our highly trained guards provide comprehensive solutions, including perimeter monitoring, access control, and surveillance. Focus on farming while we ensure the security of your agricultural investments, offering you peace of mind and uninterrupted operations.
     </p>
   </div>
 </div>
@@ -204,7 +196,7 @@ export default defineComponent({
   color: aliceblue#eb691d;
 }
 
-h4{
+h4,h3{
   color: gray;
   font-family: 'Times New Roman', Times, serif;
 }

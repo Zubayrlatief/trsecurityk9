@@ -7,19 +7,19 @@
       <div class="box hidden">
         <div class="content">
           Armed response services ensure rapid, professional protection against threats, providing highly trained personnel to safeguard businesses, homes, and critical assets.
-          <button class="box-button">Learn More</button>
+          <button @click="navigateToRIASecurityView" class="box-button">Learn More</button>
         </div>
       </div>
       <div class="box hidden">
         <div class="content">
           K9 handling services utilize trained dogs for detection, patrol, and protection, offering enhanced security solutions for businesses and critical sites.
-          <button class="box-button">Learn More</button>
+          <button @click="navigateToK9HandlingView" class="box-button">Learn More</button>
         </div>
       </div>
       <div class="box hidden">
         <div class="content">
           Security installation services provide expert setup of advanced systems, including alarms, CCTV, and access control, ensuring comprehensive protection for properties.
-          <button class="box-button">Learn More</button>
+          <button @click="navigateToSecuritySystemsView" class="box-button">Learn More</button>
         </div>
       </div>
     </div>
@@ -27,15 +27,30 @@
 </template>
 
 <script>
+import { useRouter } from 'vue-router';
 import { onMounted, onBeforeUnmount } from 'vue';
 
 export default {
   name: 'FlexboxAnimation',
   setup() {
     let observer;
+    const router = useRouter();
 
+    // Define the navigation functions
+    const navigateToK9HandlingView = () => {
+      router.push('/K9HandlingView');
+    };
+
+    const navigateToRIASecurityView = () => {
+      router.push('/RIASecurityView');
+    };
+
+    const navigateToSecuritySystemsView = () => {
+      router.push('/SecuritySystemsView');
+    };
+
+    // Intersection Observer for animations
     onMounted(() => {
-      // Define the observer
       observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
@@ -51,15 +66,23 @@ export default {
       hiddenElements.forEach((el) => observer.observe(el));
     });
 
+    // Cleanup observer on component unmount
     onBeforeUnmount(() => {
-      // Disconnect the observer to prevent memory leaks
       if (observer) {
         observer.disconnect();
       }
     });
-  },
+
+    // Return the navigation methods to be used in the template
+    return {
+      navigateToRIASecurityView,
+      navigateToK9HandlingView,
+      navigateToSecuritySystemsView
+    };
+  }
 };
 </script>
+
 
 <style scoped>
 /* Flexbox container */
@@ -196,5 +219,12 @@ h1 span {
   h1{
     font-size: 1rem;
   }
+  .content{
+    
+  }
+  .box-button{
+    padding: 5px;
+  }
+  {}
 }
 </style>
