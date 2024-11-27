@@ -4,20 +4,26 @@
     <div class="main-container">
       <div class="container-2">
         <img class="img" :src="img" alt="TR Security K9" />
-        <div class="container-3">
-          <h1>Residential/Industrial/Residential</h1>
-        </div>
       </div>
-      <h1 class="h1">WE OFFER ALL TYPES OF SECURITY</h1>
+      <h4 class="h1 fw-bold">DEDICATED TO THE SAFETY OF ALL OUR CLIENTS WE INCLUDE EVERY TYPE OF SECURITY SOLUTIONS</h4>
       <div class="container-1">
         <div class="boxes-overlay">
           <div class="box hidden">
+            <h4 class="fw-bold">RESIDENTIAL SECURITY</h4>
             <div class="content">
               "Unmatched Armed Response Services: Protecting Your Home, Business, and Assets with Rapid, Professional,
               and Reliable Security Solutions 24/7."
             </div>
           </div>
           <div class="box hidden">
+            <h4 class="fw-bold">AGRICULTURAL SECURITY</h4>
+            <div class="content">
+              "Unmatched Armed Response Services: Protecting Your Home, Business, and Assets with Rapid, Professional,
+              and Reliable Security Solutions 24/7."
+            </div>
+          </div>
+          <div class="box hidden">
+            <h4 class="fw-bold">INDUSTRIAL SECURITY</h4>
             <div class="content">
               "Unmatched Armed Response Services: Protecting Your Home, Business, and Assets with Rapid, Professional,
               and Reliable Security Solutions 24/7."
@@ -25,10 +31,39 @@
           </div>
         </div>
       </div>
+
+      <div class="d-flex">
+  <div class="p-2 flex-fill box hidden bg-black">
+    <h3>OUR STATEMET</h3>
+    <p>
+      Ensure the safety of your home and family with our Residential Guarding Service. 
+      Our trained guards provide visible deterrence, patrols, and access control to 
+      maintain a secure environment. Count on us for swift incident response and 
+      personalized security, offering peace of mind and a safe haven for you and your 
+      loved ones.
+    </p>
+  </div>
+  <div class="p-2 flex-fill box hidden bg-black">
+    <h3>Our Trusted Services</h3>
+    <h4></h4>
+    <p>
+      Protect your agricultural assets with our specialized Agricultural Guarding 
+      Service. Our trained guards ensure the safety of your property, livestock, 
+      and equipment through perimeter monitoring, access control, and surveillance. 
+      Count on us to deter theft, vandalism, and trespassing, so you can focus on 
+      farming with peace of mind.
+    </p>
+  </div>
+</div>
+
+
+   
     </div>
     <FooterComp />
   </div>
 </template>
+
+
 
 <script lang="ts">
 import { defineComponent, onMounted, onBeforeUnmount } from 'vue';
@@ -49,10 +84,6 @@ export default defineComponent({
   },
   setup() {
     const router = useRouter();
-    const navigateToContact = () => {
-      router.push('/ContactView');
-    };
-
     let observer: IntersectionObserver | null = null;
 
     onMounted(() => {
@@ -84,8 +115,10 @@ export default defineComponent({
 });
 </script>
 
+
 <style scoped>
 .main-container {
+  background: black;
   width: 100%;
   height: auto;
   display: flex;
@@ -94,7 +127,7 @@ export default defineComponent({
 
 .container-1 {
   margin: 5%;
-  height: 50vh;
+  height: 40vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -108,7 +141,7 @@ export default defineComponent({
 
 .boxes-overlay {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -116,16 +149,22 @@ export default defineComponent({
   gap: 20px;
   justify-content: center;
   z-index: 1;
-  width: 80%;
+  width: 90%;
 }
 
 .box {
   flex: 1 1 calc(30% - 20px);
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(15, 15, 15, 0.7);
   padding: 20px;
   border-radius: 10px;
   color: rgb(194, 190, 190);
   text-align: center;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease;
+}
+
+.hidden {
   opacity: 0;
   transform: translateY(50px);
   transition: all 0.6s ease;
@@ -143,7 +182,8 @@ export default defineComponent({
 }
 
 .container-3 {
-  left: 30%;
+  
+  left: 40%;
   width: 30%;
   top: 40%;
   position: absolute;
@@ -156,14 +196,19 @@ export default defineComponent({
 .h1{
   display: flex;
   justify-content: center;
-  margin-top: 8%;
-
+  margin-top: 4%;
+  text-align: center;
 }
 
-h1 {
-  font-size: 2rem;
-  margin: 0;
+.fw-bold{
+  color: aliceblue#eb691d;
 }
+
+h4{
+  color: gray;
+  font-family: 'Times New Roman', Times, serif;
+}
+
 
 /* Media Queries for Responsiveness */
 
@@ -210,19 +255,29 @@ h1 {
   .boxes-overlay {
     flex-direction: column;
     gap: 15px;
+    margin-top: 40%;
+    margin-bottom: 80%;
   }
 
   .box {
     flex: 1 1 auto;
-    padding: 10px;
+    padding: 5px;
+    
+    
   }
 
   h1 {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
   .container-1{
     
   margin: 20%;
+  }
+  .d-flex{
+    margin-top: 50%;
+  }
+  p{
+    font-size: 0.8rem;
   }
 }
 </style>
