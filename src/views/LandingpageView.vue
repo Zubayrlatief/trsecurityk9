@@ -1,48 +1,36 @@
 <template>
   <NavbarComp />
-  <div id="landing ">
+  <div id="landing">
     <div class="main">
       <img class="img" :src="img" alt="TR Security K9" />
-      <div class="container-main ">
-        <h1 >YOUR 24/7 SECURITY IS OUR PRIORITY</h1>
-        <button @click="navigateToContact" class="box-button">GET IN TOUCH</button>
+      <div class="container-main">
+        <div class="content-container">
+          <h1 class="border-bottom">YOUR 24/7 SECURITY IS OUR PRIORITY</h1>
+          <div class="button-section">
+            <button @click="navigateToContact" class="box-button">GET IN TOUCH</button>
+            <button @click="navigateToServices" class="box-button">OUR SERVICES</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
   <MissionComp />
-  <div class="d-flex flex-column flex-md-row text-light bg-black  ">
-    <div class="p-2 flex-fill box hidden bg-black ">
+  <div class="d-flex flex-column flex-md-row text-light bg-black">
+    <div class="p-2 flex-fill box hidden bg-black">
       <h3>Protecting Industry and Homes with Excellence</h3>
       <p>
-        Our security company is dedicated to safeguarding both industrial and
-        residential properties with unmatched expertise. For industrial security, we
-        provide customized solutions to protect your facilities, equipment, and
-        workforce. Our trained professionals ensure access control, perimeter
-        protection, and surveillance to prevent unauthorized access and maintain
-        operational integrity. In residential security, we prioritize your family’s
-        safety by offering vigilant patrols, access control, and visible deterrence
-        to create a secure environment. Trust us to deliver peace of mind through our
-        proactive and responsive services tailored to meet your unique security
-        needs.
+        Our security company is dedicated to safeguarding both industrial and residential properties with unmatched expertise. For industrial security, we provide customized solutions to protect your facilities, equipment, and workforce. Our trained professionals ensure access control, perimeter protection, and surveillance to prevent unauthorized access and maintain operational integrity. In residential security, we prioritize your family’s safety by offering vigilant patrols, access control, and visible deterrence to create a secure environment. Trust us to deliver peace of mind through our proactive and responsive services tailored to meet your unique security needs.
       </p>
     </div>
-    <div class="p-2 flex-fill box hidden bg-black ">
+    <div class="p-2 flex-fill box hidden bg-black">
       <h3>Securing Farms and Agricultural Assets</h3>
       <p>
-        Agricultural security is vital to protect the backbone of our economy—our
-        farms and resources. Our specialized agricultural guarding services are
-        designed to safeguard your property, livestock, and equipment against theft,
-        vandalism, and trespassing. With a deep understanding of the agricultural
-        industry, our highly trained guards provide comprehensive solutions,
-        including perimeter monitoring, access control, and surveillance. Focus on
-        farming while we ensure the security of your agricultural investments,
-        offering you peace of mind and uninterrupted operations.
+        Agricultural security is vital to protect the backbone of our economy—our farms and resources. Our specialized agricultural guarding services are designed to safeguard your property, livestock, and equipment against theft, vandalism, and trespassing. With a deep understanding of the agricultural industry, our highly trained guards provide comprehensive solutions, including perimeter monitoring, access control, and surveillance. Focus on farming while we ensure the security of your agricultural investments, offering you peace of mind and uninterrupted operations.
       </p>
     </div>
   </div>
   <FooterComp />
 </template>
-
 
 <script lang="ts">
 import { defineComponent, onMounted, onBeforeUnmount } from 'vue';
@@ -68,6 +56,9 @@ export default defineComponent({
     const navigateToContact = () => {
       router.push('/ContactView');
     };
+    const navigateToServices = () => {
+      router.push('/ServicesView');
+    };
 
     let observer: IntersectionObserver | null = null;
 
@@ -92,11 +83,10 @@ export default defineComponent({
       }
     });
 
-    return { navigateToContact };
+    return { navigateToContact, navigateToServices };
   },
 });
 </script>
-
 
 <style scoped>
 .main {
@@ -110,38 +100,50 @@ export default defineComponent({
 
 .container-main {
   position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 50%;
+  right: 0;
+  transform: translateY(-20%);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.content-container {
+  background-color: rgba(0, 0, 0, 0.6); /* Dark background with opacity */
+  color: #fff;
+  padding: 30px;
   text-align: center;
+  backdrop-filter: blur(0.2px);
+  width:  70%;
 }
 
 h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
+  font-size: 2.5rem;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 3rem;
 }
 
-
+.button-section {
+  display: flex;
+  flex-direction: column; /* Default to column */
+  gap: 10px;
+}
 
 .box-button {
-  margin-top: 3rem;
-  padding: 0.6em;
-  border-radius: 15px;
+  padding: 0.8em;
+  border-radius: 10px;
   font-weight: bold;
-  transition: .4s ease-in-out;
-  box-shadow: inset 1px 2px 5px rgba(0,0,0,0.2);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  background: #171717;
+  color: rgb(128, 128, 128);
+  transition: 0.4s ease-in-out;
   letter-spacing: 0.2em;
   border: none;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 1.2rem;
-  background: #eb691d;
-  
 }
 
 .box-button:hover {
-  cursor:pointer;
+  cursor: pointer;
   letter-spacing: 0.5em;
   transform: translateY(-0.8em);
   background: #171717;
@@ -149,15 +151,14 @@ h1 {
 }
 
 .box-button:active {
-  letter-spacing: 0.4em;
-  transition: 0.1s all;
   transform: translateY(-0.6em);
   background: #171717;
   color: grey;
 }
 
 .d-flex {
-  flex-direction: column;
+  display: flex;
+  flex-direction: row;
 }
 
 .box {
@@ -178,50 +179,53 @@ h1 {
   transform: translateY(0);
 }
 
-
-@media (min-width: 768px) {
-  .d-flex {
-    flex-direction: row;
-  }
-
-  .container-main {
-    top: 50%;
-    left: 50%;
-  }
-
-  h1 {
-    font-size: 2.5rem;
-  }
-
-  .button {
-    font-size: 1.5rem;
-    padding: 12px 36px;
-  }
-}
 @media (max-width: 576px) {
   .container-main {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    padding-right: 10px;
+  }
+
+  .content-container {
+    width: 250px;
   }
 
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .box-button {
-    padding: 8px 16px;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
-  .box {
-    padding: 1rem;
+  .button-section {
+    flex-direction: column; /* Stack buttons vertically on smaller screens */
   }
 }
 
+@media (min-width: 577px) {
+  .button-section {
+    flex-direction: row; /* Display buttons in a row on medium and larger screens */
+    justify-content: space-between;
+  }
+
+  .box-button {
+    width: 48%; /* Buttons take up 48% of the container width */
+  }
+}
 @media (max-width: 400px) {
-  .box-button{
-    padding: 2px;
+
+  h1 {
+    font-size: 0.5rem; 
+    margin-bottom: 10px;
+  }
+
+  .box-button {
+    padding: 1px 2px; /* Make the buttons smaller */
+    font-size: 0.4rem; /* Reduce font size of the buttons */
+  }
+  .content-container {
+  background-color: rgba(0, 0, 0, 0.6); /* Dark background with opacity */
+  color: #fff;
+  margin-left: 20%;
   }
 }
 
