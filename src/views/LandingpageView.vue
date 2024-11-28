@@ -95,8 +95,10 @@ h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
   font-weight: bold;
-  color: #ffffff;
+  color: gray;
+    font-family: 'Times New Roman', Times, serif;
 }
+
 
 button {
   padding: 10px 50px;
@@ -109,6 +111,7 @@ button {
   transition: all 0.5s ease;
   font-size: 1.75rem;
 }
+
 
 .button:hover {
   background-color: #552a10;

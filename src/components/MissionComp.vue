@@ -1,6 +1,7 @@
 <template>
   <div class="container-heading">
     <h1>WHAT WE DELIVER ON</h1>
+    <h2 class="h2">TrustedGraded Security Services</h2>
   </div>
   <div class="container">
     <div class="boxes">
@@ -97,12 +98,41 @@ export default {
   background-color: #000000;
 }
 
+.container-heading{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.container-heading:hover h1,h2 {
+  transform: translate(30px, 30px) scale(1.1);
+  color: rgba(150, 150, 150, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+@keyframes floatingEffect {
+  0%, 100% {
+    transform: translate(20px, 20px);
+  }
+  50% {
+    transform: translate(25px, 25px);
+  }
+}
+
+h2,h1 {
+  animation: floatingEffect 3s infinite ease-in-out;
+  
+}
+
+
+
 /* Heading */
 h1 {
   padding: 20px 50px;
   font-weight: 900;
-  background-color: #e35e11;
-  color: rgb(0, 0, 0);
+  background-color: #000000;
+  color: gray;
+    font-family: 'Times New Roman', Times, serif;
   font-size: 1.75rem;
   transform: skew(-20deg);
   display: inline-block;
@@ -111,7 +141,9 @@ h1 {
   font-size: 3rem;
   font-weight: bold;
 }
-
+.h2{
+  font-family: 'Times New Roman', Times, serif;
+}
 h1 span {
   display: inline-block;
   transform: skew(20deg);
@@ -174,7 +206,7 @@ h1 span {
   margin-top: 3rem;
   padding: 5px 30px;
   font-weight: 900;
-  background-color: #EB691D;
+  background-color:  #eb691d;
   color: rgb(0, 0, 0);
   border-style: black;
   cursor: pointer;
@@ -186,7 +218,7 @@ h1 span {
 }
 
 .box-button:hover {
-  background-color: #ff7a3c;
+  background-color: #000000;
   transform: scale(1.05);
 }
 
@@ -203,11 +235,13 @@ h1 span {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:   #e35e11;
+  background-color:   #000000;
   width: 100%;
   border: #000000;
   
 }
+
+
 
 @media (max-width: 700px) {
   h1 {
@@ -224,7 +258,5 @@ h1 span {
   }
   .box-button{
     padding: 5px;
-  }
-  {}
-}
+  }}
 </style>
