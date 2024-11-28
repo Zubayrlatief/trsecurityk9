@@ -21,6 +21,11 @@ component: {
       background: #eb691d; /* Orange background */
       color: #ffffff;      /* White text */
     }
+
+
+    #app{
+  background-color: black;
+}
     
 .button{
   background-color: EB691D;

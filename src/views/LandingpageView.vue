@@ -1,17 +1,17 @@
 <template>
   <NavbarComp />
-  <div id="landing">
+  <div id="landing ">
     <div class="main">
       <img class="img" :src="img" alt="TR Security K9" />
-      <div class="container-main">
-        <h1>YOUR 24/7 SECURITY IS OUR PRIORITY</h1>
+      <div class="container-main ">
+        <h1 >YOUR 24/7 SECURITY IS OUR PRIORITY</h1>
         <button @click="navigateToContact" class="box-button">GET IN TOUCH</button>
       </div>
     </div>
   </div>
   <MissionComp />
-  <div class="d-flex flex-column flex-md-row text-light bg-black">
-    <div class="p-2 flex-fill box hidden bg-black">
+  <div class="d-flex flex-column flex-md-row text-light bg-black  ">
+    <div class="p-2 flex-fill box hidden bg-black ">
       <h3>Protecting Industry and Homes with Excellence</h3>
       <p>
         Our security company is dedicated to safeguarding both industrial and
@@ -26,7 +26,7 @@
         needs.
       </p>
     </div>
-    <div class="p-2 flex-fill box hidden bg-black">
+    <div class="p-2 flex-fill box hidden bg-black ">
       <h3>Securing Farms and Agricultural Assets</h3>
       <p>
         Agricultural security is vital to protect the backbone of our economy—our

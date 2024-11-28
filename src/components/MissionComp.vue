@@ -1,9 +1,9 @@
 <template>
-  <div class="container-heading">
+  <div class="container-heading ">
     <h1>WHAT WE DELIVER ON</h1>
-    <h2 class="h2">TRUSTED GRADED SECURITY</h2>
+    <h2 class="h2 p-4 border-bottom">TRUSTED GRADED SECURITY</h2>
   </div>
-  <div class="container">
+  <div class="container border-bottom ">
     <div class="boxes">
       <div class="box hidden">
         <div class="content">
@@ -20,7 +20,7 @@
       <div class="box hidden">
         <div class="content">
           Security installation services provide expert setup of advanced systems, including alarms, CCTV, and access control, ensuring comprehensive protection for properties.
-          <button @click="navigateToSecuritySystemsView" class="box-button">Learn More</button>
+          <button @click="navigateToSecuritySystemsView" class="box-button ">Learn More</button>
         </div>
       </div>
     </div>
