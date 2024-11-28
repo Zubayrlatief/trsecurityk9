@@ -8,7 +8,7 @@
     </div>
   </div>
   
-  <!-- Section with Trusted Installation Services, Electric Fencing Solution, etc. -->
+  <!-- Section with Trusted Installation Services, Electric Fenci -->
   <div class="d-flex bg-black">
     <div class="p-2 flex-fill hidden">
       <h3>Trusted Installation Services</h3>
@@ -126,7 +126,6 @@ export default defineComponent({
   setup() {
     let observer: IntersectionObserver | null = null;
 
-    // Using lifecycle hooks: onMounted and onBeforeUnmount
     onMounted(() => {
       observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
@@ -138,18 +137,16 @@ export default defineComponent({
         });
       });
 
-      // Observing elements with the 'hidden' class
       const hiddenElements = document.querySelectorAll('.hidden');
       hiddenElements.forEach((el) => observer?.observe(el));
     });
 
     onBeforeUnmount(() => {
       if (observer) {
-        observer.disconnect(); // Disconnect observer when component is unmounted
+        observer.disconnect(); 
       }
     });
 
-    // No need to return anything if you don't use any reactive properties in the template.
   }
 });
 </script>
@@ -210,29 +207,25 @@ export default defineComponent({
     margin-top: -9%;
   }
 
-  /* Add initial hidden state and transition effect */
   .hidden {
     opacity: 0;
-    transform: translateY(120px); /* Start slightly below */
+    transform: translateY(120px); 
     transition: opacity 0.6s ease, transform 0.6s ease;
   }
 
-  /* Class added when elements become visible */
   .show {
     opacity: 1;
     transform: translateY(0);
   }
 
-  /* Optional: Add more styling for the flex-fill divs */
   .flex-fill {
-    background-color: #222; /* Dark background */
+    background-color: #222; 
     color: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
-  /* Add hover effect for the containers */
   .flex-fill:hover {
     transform: translateY(-20px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);

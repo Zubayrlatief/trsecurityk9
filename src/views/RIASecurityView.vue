@@ -90,7 +90,7 @@ export default defineComponent({
           });
         },
         {
-          threshold: 0.2, // Adjust for when elements should trigger (20% visible)
+          threshold: 0.2, 
         }
       );
 
@@ -202,7 +202,6 @@ h4,h3{
 }
 
 
-/* Media Queries for Responsiveness */
 
 @media (max-width: 1024px) {
   .container-3 {

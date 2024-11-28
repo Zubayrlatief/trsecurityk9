@@ -18,8 +18,8 @@ component: {
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap');
 
 ::selection {
-      background: #eb691d; /* Orange background */
-      color: #ffffff;      /* White text */
+      background: #eb691d;
+      color: #ffffff;    
     }
 
 

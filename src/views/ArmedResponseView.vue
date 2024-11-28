@@ -34,8 +34,6 @@
         <button class="box-button" @click="navigateToContact">Contact Us Today</button>
       </div>
       
-      <!-- Contact Us Button -->
-     
     </div>
   </div>
   <FooterComp />
@@ -148,7 +146,6 @@ export default defineComponent({
 .img{
   width: 50%;
 }
-/* Button styling */
 .box-button {
   margin-top: 3rem;
   padding: 0.6em;
@@ -181,7 +178,6 @@ export default defineComponent({
 }
 
 
-/* Responsive adjustments */
 @media (max-width: 900px) {
   .img{
     height: 100vh;

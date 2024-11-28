@@ -156,7 +156,6 @@ h1 {
   color: grey;
 }
 
-/* Flexbox layout responsiveness */
 .d-flex {
   flex-direction: column;
 }
@@ -180,7 +179,6 @@ h1 {
 }
 
 
-/* Medium screens (768px and up) */
 @media (min-width: 768px) {
   .d-flex {
     flex-direction: row;
@@ -200,8 +198,6 @@ h1 {
     padding: 12px 36px;
   }
 }
-
-/* Small screens (576px and down) */
 @media (max-width: 576px) {
   .container-main {
     top: 50%;

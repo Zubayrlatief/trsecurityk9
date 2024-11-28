@@ -85,30 +85,28 @@ export default defineComponent({
 });
 </script>
 <style scoped>
-    /* Form Container */
 .form-container {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
 }
 
-/* Contact Form */
 .contact-form {
-  background-color: #1a1a1a; /* A sleek dark gray background */
-  border: 1px solid #333; /* Subtle border */
+  background-color: #1a1a1a; 
+  border: 1px solid #333; 
   border-radius: 8px;
 }
 
 .contact-form .form-label {
   font-size: 0.9rem;
   font-weight: 600;
-  color: #ccc; /* Subtle text for labels */
+  color: #ccc;
 
 }
 
 .contact-form .form-control {
   background-color: #2a2a2a;
-  color: #eee; /* Light text for inputs */
+  color: #eee; 
   border: 1px solid #444;
   border-radius: 6px;
   padding: 12px;
@@ -135,14 +133,13 @@ export default defineComponent({
   background-color: #bcc2c9;
   transform: scale(1.05);
 }
-/* Dropdown Styling */
 .contact-form select.form-control {
-  background-color: #2a2a2a; /* Matches input background */
-  color: #eee; /* Matches text color */
+  background-color: #2a2a2a; 
+  color: #eee; 
   border: 1px solid #444;
   border-radius: 6px;
   padding: 12px;
-  appearance: none; /* Removes default arrow for custom styling */
+  appearance: none; 
 }
 
 .contact-form select.form-control:focus {
@@ -151,7 +148,6 @@ export default defineComponent({
   outline: none;
 }
 
-/* Optional: Add a custom dropdown arrow */
 .contact-form select.form-control {
   background-image: url('data:image/svg+xml;charset=UTF-8,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 4 5%27%3e%3cpath fill=%27%23ccc%27 d=%27M2 0L0 2h4z%27/%3e%3c/svg%3e');
   background-repeat: no-repeat;
@@ -159,8 +155,6 @@ export default defineComponent({
   background-size: 12px 12px;
 }
 
-
-/* Typography */
 h2 {
   font-size: 1.8rem;
   color: #fff;
@@ -169,8 +163,7 @@ h2 {
 .text-muted {
   color: #aaa;
 }
-
-/* Responsive Adjustments */
+    
 @media (max-width: 768px) {
   .contact-form {
     padding: 20px;
