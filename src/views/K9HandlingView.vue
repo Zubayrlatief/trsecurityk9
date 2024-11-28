@@ -1,7 +1,13 @@
 <template lang="">
     <NavbarComp/>
-    <div>
-        
+    <div class="container-main bg-black">
+      <div class="container-1 d-flex justify-content">
+        <img >
+        </div>
+        <div>
+        <h1></h1>
+          <h2></h2>
+        </div>
     </div>
     <FooterComp/>
 </template>
@@ -20,5 +26,10 @@ export default defineComponent({
 </script>
 
 <style scoped>
-    
+    .container-main{
+      height: 100vh;
+    }
+    .container-1{
+
+    }
 </style>

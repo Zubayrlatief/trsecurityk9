@@ -8,9 +8,9 @@
         <img class="img" :src="img2" alt="Additional Image" />
       </div>
       
-      <div class="container-main">
+      <div class="container-main ">
         <div class="heading-container">
-          <h1>Unmatched Armed Response Services</h1>
+          <h1>UNMATHCED ARMED RESOPNSE SERVICES</h1>
         </div>
       </div>
 
@@ -31,10 +31,11 @@
             Security installation services provide expert setup of advanced systems, including alarms, CCTV, and access control, ensuring comprehensive protection for properties.
           </div>
         </div>
+        <button class="box-button" @click="navigateToContact">Contact Us Today</button>
       </div>
       
       <!-- Contact Us Button -->
-      <button class="main-button" @click="navigateToContact">Contact Us Today</button>
+     
     </div>
   </div>
   <FooterComp />
@@ -96,7 +97,6 @@ export default defineComponent({
 
 
 <style scoped>
-/* General layout */
 .main {
   position: relative;
 }
@@ -110,20 +110,17 @@ export default defineComponent({
   z-index: 2;
 }
 
-/* Heading container */
 .heading-container {
   max-width: 800px;
   margin: 0 auto;
-  background-color: rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(9px);
+  backdrop-filter: blur(2px);
   padding: 50px;
   border-radius: 10px;
 }
 
-/* Boxes overlay */
 .boxes-overlay {
   position: absolute;
-  top: 68%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -152,27 +149,37 @@ export default defineComponent({
   width: 50%;
 }
 /* Button styling */
-.main-button {
-  position: absolute;
-  top: 85%;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 3;
-  padding: 15px 50px;
+.box-button {
+  margin-top: 3rem;
+  padding: 0.6em;
+  border-radius: 15px;
   font-weight: bold;
-  background-color: #eb691d;
-  color: rgb(0, 0, 0);
+  transition: .4s ease-in-out;
+  box-shadow: inset 1px 2px 5px rgba(0,0,0,0.2);
+  letter-spacing: 0.2em;
   border: none;
-  cursor: pointer;
-  border-radius: 8px;
-  font-size: 1.5rem;
-  transition: all 0.3s ease-in-out;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.2rem;
+  background: #eb691d;
+  
 }
-.main-button:hover {
-  background-color: #552a10;
-  color: white;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+
+.box-button:hover {
+  cursor:pointer;
+  letter-spacing: 0.5em;
+  transform: translateY(-0.8em);
+  background: #171717;
+  color: #eb691d;
 }
+
+.box-button:active {
+  letter-spacing: 0.4em;
+  transition: 0.1s all;
+  transform: translateY(-0.6em);
+  background: #171717;
+  color: grey;
+}
+
 
 /* Responsive adjustments */
 @media (max-width: 900px) {

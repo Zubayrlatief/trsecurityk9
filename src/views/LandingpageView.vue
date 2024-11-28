@@ -5,12 +5,12 @@
       <img class="img" :src="img" alt="TR Security K9" />
       <div class="container-main">
         <h1>YOUR 24/7 SECURITY IS OUR PRIORITY</h1>
-        <button @click="navigateToContact" class="button">GET IN TOUCH</button>
+        <button @click="navigateToContact" class="box-button">GET IN TOUCH</button>
       </div>
     </div>
   </div>
   <MissionComp />
-  <div class="d-flex flex-column flex-md-row text-light">
+  <div class="d-flex flex-column flex-md-row text-light bg-black">
     <div class="p-2 flex-fill box hidden bg-black">
       <h3>Protecting Industry and Homes with Excellence</h3>
       <p>
@@ -45,7 +45,7 @@
 
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent, onMounted, onBeforeUnmount } from 'vue';
 import { useRouter } from 'vue-router';
 import NavbarComp from '@/components/NavbarComp.vue';
 import MissionComp from '@/components/MissionComp.vue';
@@ -68,10 +68,35 @@ export default defineComponent({
     const navigateToContact = () => {
       router.push('/ContactView');
     };
+
+    let observer: IntersectionObserver | null = null;
+
+    onMounted(() => {
+      observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+          } else {
+            entry.target.classList.remove('show');
+          }
+        });
+      });
+
+      const hiddenElements = document.querySelectorAll('.hidden');
+      hiddenElements.forEach((el) => observer?.observe(el));
+    });
+
+    onBeforeUnmount(() => {
+      if (observer) {
+        observer.disconnect();
+      }
+    });
+
     return { navigateToContact };
   },
 });
 </script>
+
 
 <style scoped>
 .main {
@@ -95,27 +120,40 @@ h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
   font-weight: bold;
-  color: gray;
     font-family: 'Times New Roman', Times, serif;
 }
 
 
-button {
-  padding: 10px 50px;
-  font-weight: 900;
-  background-color: #eb691d;
-  color: #000000;
+
+.box-button {
+  margin-top: 3rem;
+  padding: 0.6em;
+  border-radius: 15px;
+  font-weight: bold;
+  transition: .4s ease-in-out;
+  box-shadow: inset 1px 2px 5px rgba(0,0,0,0.2);
+  letter-spacing: 0.2em;
   border: none;
-  cursor: pointer;
-  transform: skew(25deg);
-  transition: all 0.5s ease;
-  font-size: 1.75rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.2rem;
+  background: #eb691d;
+  
 }
 
+.box-button:hover {
+  cursor:pointer;
+  letter-spacing: 0.5em;
+  transform: translateY(-0.8em);
+  background: #171717;
+  color: #eb691d;
+}
 
-.button:hover {
-  background-color: #552a10;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+.box-button:active {
+  letter-spacing: 0.4em;
+  transition: 0.1s all;
+  transform: translateY(-0.6em);
+  background: #171717;
+  color: grey;
 }
 
 /* Flexbox layout responsiveness */
@@ -129,6 +167,18 @@ button {
   text-align: justify;
   color: #ffffff;
 }
+
+.hidden {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 /* Medium screens (768px and up) */
 @media (min-width: 768px) {
@@ -163,7 +213,7 @@ button {
     font-size: 1.5rem;
   }
 
-  .button {
+  .box-button {
     padding: 8px 16px;
     font-size: 1rem;
   }

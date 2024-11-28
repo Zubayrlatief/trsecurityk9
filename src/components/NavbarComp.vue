@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar  navbar-expand-lg navbar-dark bg-black">
+  <nav class="navbar  navbar-expand-lg navbar-dark bg-black ">
     <div class="container">
       <a class="navbar-brand mx-auto m-2" href="/">
         <img src="https://zubayrlatief.github.io/Images-/TRsecurityK9-logo.png" alt="Logo" class="navbar-logo" />

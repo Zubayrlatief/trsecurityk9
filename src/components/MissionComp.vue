@@ -1,7 +1,7 @@
 <template>
   <div class="container-heading">
     <h1>WHAT WE DELIVER ON</h1>
-    <h2 class="h2">TrustedGraded Security Services</h2>
+    <h2 class="h2">TRUSTED GRADED SECURITY</h2>
   </div>
   <div class="container">
     <div class="boxes">
@@ -143,10 +143,13 @@ h1 {
 }
 .h2{
   font-family: 'Times New Roman', Times, serif;
+  
+  font-size: 1.75rem;
 }
 h1 span {
   display: inline-block;
   transform: skew(20deg);
+  
 }
 
 /* Flexbox for boxes */
@@ -202,24 +205,36 @@ h1 span {
   transform: translateX(0); /* Slide into place */
 }
 
+
 .box-button {
   margin-top: 3rem;
-  padding: 5px 30px;
-  font-weight: 900;
-  background-color:  #eb691d;
-  color: rgb(0, 0, 0);
-  border-style: black;
-  cursor: pointer;
-  transform: skew(25deg);
-  transition: all 0.5 ease;
-  font-size: 1.75rem;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  font-family: 'Source Code Pro', monospace;
+  padding: 0.6em;
+  border-radius: 15px;
+  font-weight: bold;
+  transition: .4s ease-in-out;
+  box-shadow: inset 1px 2px 5px rgba(0,0,0,0.2);
+  letter-spacing: 0.2em;
+  border: none;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.2rem;
+  background: #eb691d;
+  
 }
 
 .box-button:hover {
-  background-color: #000000;
-  transform: scale(1.05);
+  cursor:pointer;
+  letter-spacing: 0.5em;
+  transform: translateY(-0.8em);
+  background: #171717;
+  color: #eb691d;
+}
+
+.box-button:active {
+  letter-spacing: 0.4em;
+  transition: 0.1s all;
+  transform: translateY(-0.6em);
+  background: #171717;
+  color: grey;
 }
 
 .content {
@@ -228,7 +243,9 @@ h1 span {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  max-width: 90%; /* Optional: constrain text width */
+  max-width: 90%;
+  font-size: 1.5rem;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .container-heading{
