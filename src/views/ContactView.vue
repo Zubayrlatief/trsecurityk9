@@ -6,12 +6,12 @@
     Have questions or need assistance? Fill out the form below, and we’ll respond promptly.
   </p>
   <form
-    action="https://formspree.io/f/{your-form-id}"
+    action="https://formspree.io/f/mvgowyar"
     method="POST"
     class="contact-form mx-auto bg-dark text-light p-5 rounded shadow"
   >
     <div class="mb-4">
-      <label for="name" class="form-label">Your Name</label>
+      <label for="name" class="form-label ">Your Name</label>
       <input
         type="text"
         id="name"
@@ -103,6 +103,7 @@ export default defineComponent({
   font-size: 0.9rem;
   font-weight: 600;
   color: #ccc; /* Subtle text for labels */
+
 }
 
 .contact-form .form-control {
@@ -115,13 +116,13 @@ export default defineComponent({
 }
 
 .contact-form .form-control:focus {
-  border-color: #007bff;
-  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+  border-color:#eb691d;
+  box-shadow: 0 0 8px #eb691d;
   outline: none;
 }
 
 .contact-form .btn-primary {
-  background-color: #007bff;
+  background-color: #eb691d;
   border: none;
   color: white;
   font-size: 1rem;
@@ -131,7 +132,7 @@ export default defineComponent({
 }
 
 .contact-form .btn-primary:hover {
-  background-color: #0056b3;
+  background-color: #bcc2c9;
   transform: scale(1.05);
 }
 /* Dropdown Styling */
@@ -145,8 +146,8 @@ export default defineComponent({
 }
 
 .contact-form select.form-control:focus {
-  border-color: #007bff;
-  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+  border-color: #a06441;
+  box-shadow: #a36d4d;
   outline: none;
 }
 
