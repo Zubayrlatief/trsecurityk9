@@ -1,6 +1,6 @@
 <template>
   <NavbarComp />
-  <div id="landing">
+  <div id="landing ">
     <div class="main">
       <img class="img" :src="img" alt="TR Security K9" />
       <div class="container-main">
@@ -48,7 +48,7 @@ export default defineComponent({
   },
   data() {
     return {
-      img: 'https://zubayrlatief.github.io/Images-/landingtrsecurityk9.jpg',
+      img: 'https://zubayrlatief.github.io/Images-/0e1e4685-d44f-4b31-9a32-889749cd7d4e.png',
     };
   },
   setup() {

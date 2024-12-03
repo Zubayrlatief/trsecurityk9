@@ -22,21 +22,21 @@
           <!-- Carousel Slides -->
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="10000">
-              <img src="https://via.placeholder.com/400x300" class="d-block w-100" alt="First slide">
+              <img src="https://zubayrlatief.github.io/Images-/439d2089-7549-4907-87db-6703e6acbc5a%20(1).png" class="d-block w-100" alt="First slide">
               <div class="carousel-caption d-none d-md-block">
                 <h5>First Carousel - Slide 1</h5>
                 <p>Some placeholder content for the first carousel.</p>
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="2000">
-              <img src="https://via.placeholder.com/400x300" class="d-block w-100" alt="Second slide">
+              <img src="https://zubayrlatief.github.io/Images-/274cc50a-a231-4c7c-9a71-ac8a28ef18df.png" class="d-block w-100" alt="Second slide">
               <div class="carousel-caption d-none d-md-block">
                 <h5>First Carousel - Slide 2</h5>
                 <p>Some placeholder content for the first carousel.</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="https://via.placeholder.com/400x300" class="d-block w-100" alt="Third slide">
+              <img src="https://zubayrlatief.github.io/Images-/52546c1c-5dcc-435e-a6b4-9aba90b1a924.png" class="d-block w-100" alt="Third slide">
               <div class="carousel-caption d-none d-md-block">
                 <h5>First Carousel - Slide 3</h5>
                 <p>Some placeholder content for the first carousel.</p>
@@ -175,5 +175,12 @@ export default defineComponent({
 .bg-black {
   background-color: black;
   color: white;
+}
+
+@media (max-width: 500px) {
+  .d-flex{
+
+    flex-direction: column;
+  }
 }
 </style>

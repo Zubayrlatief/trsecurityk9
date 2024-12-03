@@ -56,7 +56,7 @@ export default defineComponent({
   data() {
     return {
       img1: 'https://zubayrlatief.github.io/Images-/453209260_820975970014760_7992647634388668027_n%20(1).jpg',
-      img2: 'https://zubayrlatief.github.io/Images-/335061946_227326069704609_1086594109604870972_n.jpg',
+      img2: 'https://zubayrlatief.github.io/Images-/2038bdeb-2932-42ba-99ca-3711f37943a1.png',
     };
   },
   setup() {
@@ -101,7 +101,7 @@ export default defineComponent({
 
 .container-main {
   position: absolute;
-  top: 30%;
+  top: 15%;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -114,6 +114,7 @@ export default defineComponent({
   backdrop-filter: blur(2px);
   padding: 50px;
   border-radius: 10px;
+  color: white;
 }
 
 .boxes-overlay {
@@ -130,7 +131,7 @@ export default defineComponent({
 }
 .box {
   flex: 1 1 calc(30% - 20px);
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(9, 9, 9, 0.7);
   padding: 20px;
   border-radius: 10px;
   color: rgb(194, 190, 190);
@@ -143,8 +144,10 @@ export default defineComponent({
   opacity: 1;
   transform: translateY(0);
 }
-.img{
-  width: 50%;
+.img {
+  width: 50%; 
+  max-height: 100vh;
+  object-fit: cover; 
 }
 .box-button {
   margin-top: 3rem;
@@ -202,10 +205,8 @@ export default defineComponent({
 }
 
 @media (max-width: 600px) {
-  .container-main {
-  }
   .heading-container {
-    padding: 30px;
+    padding: 10px;
   }
   .main-button {
     font-size: 1.2rem;
@@ -213,34 +214,57 @@ export default defineComponent({
   }
 }
 
-@media (max-width: 400px) {
-  .img{
-    height: 55vh;
-  }
-  h1 {
-    font-size: 0.6rem;
-    margin-top: 8%;
-  }
-  .boxes-overlay {
+@media (max-width: 500px) {
+  .img {
     width: 100%;
-    margin-bottom: 5%;
-    gap: 5px;
+    height: auto; 
+    max-height: 100vh;
+    object-fit: cover;
   }
+
+  h1 {
+    font-size: 2rem;
+    margin-top: 10%;
+    line-height: 1.5;
+  }
+
+  .boxes-overlay {
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    gap: 10px;
+  }
+
   .box {
-    padding: 2px;
-    font-size: 0.5rem;
-  }
-  .main-button {
+    margin: 20px;
+    padding: 10px;
     font-size: 1rem;
-    padding: 8px 20px;
+    line-height: 1.2;
+    text-align: center;
   }
-  .heading-container{
-    padding: 1px 1px;
+
+  .box-button {
+    font-size: 1rem;
+    padding: 10px;
+    width: 90%;
+    margin: 20px auto 0;
+    display: block;
   }
-  .main-button{
-    position: absolute;
-    top: 85%;
-    padding: 2px;
+
+  .heading-container {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .container-main {
+    top: 10%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .main {
+    padding: 10px;
   }
 }
+
 </style>
