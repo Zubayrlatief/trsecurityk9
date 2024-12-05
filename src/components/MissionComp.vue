@@ -98,20 +98,22 @@ export default {
   background-color: #000000;
 }
 
-.container-heading{
+.container-heading {
   display: flex;
   flex-direction: column;
-  
+  align-items: center;
 }
 
-.container-heading:hover h1,h2 {
+.container-heading:hover h1,
+h2 {
   transform: translate(30px, 30px) scale(1.1);
   color: rgba(150, 150, 150, 0.3);
   transition: all 0.3s ease-in-out;
 }
 
 @keyframes floatingEffect {
-  0%, 100% {
+  0%,
+  100% {
     transform: translate(20px, 20px);
   }
   50% {
@@ -119,12 +121,10 @@ export default {
   }
 }
 
-h2,h1 {
+h2,
+h1 {
   animation: floatingEffect 3s infinite ease-in-out;
-  
 }
-
-
 
 /* Heading */
 h1 {
@@ -132,64 +132,66 @@ h1 {
   font-weight: 900;
   background-color: #000000;
   color: gray;
-    font-family: 'Times New Roman', Times, serif;
-  font-size: 1.75rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.5rem;
   transform: skew(-20deg);
   display: inline-block;
   transition: all 0.5s ease;
   text-align: center;
-  font-size: 3rem;
   font-weight: bold;
 }
-.h2{
+
+.h2 {
   font-family: 'Times New Roman', Times, serif;
-  
-  font-size: 1.75rem;
+  margin-bottom: -2%;
+  font-size: 2rem;
 }
+
 h1 span {
   display: inline-block;
   transform: skew(20deg);
-  
 }
 
 /* Flexbox for boxes */
 .boxes {
-  padding: 5%;
   display: flex;
-  gap: 30px;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 5%;
 }
 
 .box {
-  width: 100%;
-  height: 400px; /* Adjust as needed */
-  background-size: cover; /* Ensure the image fills the entire box */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Prevent tiling */
-  position: relative; /* Required for overlaying text */
-  color: white; /* Text color for contrast */
-  display: flex; /* Center text with Flexbox */
+  flex: 1 1 calc(33.333% - 20px); /* 3 boxes per row, adjusts for gaps */
+  max-width: calc(33.333% - 20px);
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
+  display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   font-size: 1.2rem;
-  border-radius: 8px; /* Optional rounded corners */
-  opacity: 0; /* For animation */
-  transform: translateX(-100%); /* Start off-screen for animation */
+  border-radius: 8px;
+  opacity: 0;
+  transform: translateX(-100%);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-/* Specific background images for each box */
+/* Background images for each box */
 .box:nth-child(1) {
-  background-image: url('https://zubayrlatief.github.io/Images-/453209260_820975970014760_7992647634388668027_n%20(1).png'); /* Replace with your image path */
+  background-image: url('https://zubayrlatief.github.io/Images-/453209260_820975970014760_7992647634388668027_n%20(1).png');
 }
 
 .box:nth-child(2) {
-  background-image: url('https://zubayrlatief.github.io/Images-/0c311717be90de50883a94690c9cb05d.jpg'); /* Replace with your image path */
+  background-image: url('https://zubayrlatief.github.io/Images-/0c311717be90de50883a94690c9cb05d.png');
 }
 
 .box:nth-child(3) {
-  background-image: url('https://zubayrlatief.github.io/Images-/57336201_2435266096483467_1952572130822455296_n.jpg'); /* Replace with your image path */
+  background-image: url('https://zubayrlatief.github.io/Images-/57336201_2435266096483467_1952572130822455296_n.jpg');
 }
 
 /* Animation on intersecting */
@@ -198,31 +200,21 @@ h1 span {
   transform: translateX(0);
 }
 
-
-/* Add animations when visible */
-.hidden.show {
-  opacity: 1;
-  transform: translateX(0); /* Slide into place */
-}
-
-
 .box-button {
   margin-top: 3rem;
-  padding: 0.6em;
+  padding: 0.8em 1.2em;
   border-radius: 15px;
-  font-weight: bold;
-  transition: .4s ease-in-out;
-  box-shadow: inset 1px 2px 5px rgba(0,0,0,0.2);
+  transition: 0.4s ease-in-out;
+  box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.2);
   letter-spacing: 0.2em;
   border: none;
   font-family: 'Times New Roman', Times, serif;
   font-size: 1.2rem;
   background: #eb691d;
-  
 }
 
 .box-button:hover {
-  cursor:pointer;
+  cursor: pointer;
   letter-spacing: 0.5em;
   transform: translateY(-0.8em);
   background: #171717;
@@ -244,36 +236,77 @@ h1 span {
   align-items: center;
   flex-direction: column;
   max-width: 90%;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: 'Times New Roman', Times, serif;
 }
 
-.container-heading{
+.container-heading {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:   #000000;
+  background-color: #000000;
   width: 100%;
   border: #000000;
-  
 }
 
+/* Media Queries for Smaller Screens */
+@media (max-width: 1024px) {
+  .box {
+    flex: 1 1 calc(50% - 20px); /* 2 boxes per row */
+    max-width: calc(50% - 20px);
+  }
 
-
-@media (max-width: 700px) {
   h1 {
     font-size: 2rem;
   }
-  .box {
-    width: 100%;
-  }
-  h1{
+
+  .box-button {
     font-size: 1rem;
   }
-  .content{
-    
+}
+
+@media (max-width: 700px) {
+  .box {
+    flex: 1 1 100%; /* Full width */
+    max-width: 100%;
   }
-  .box-button{
-    padding: 5px;
-  }}
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .box-button {
+    padding: 0.5em 1em;
+  }
+
+  .container-heading {
+    margin-top: 5%;
+  }
+}
+
+@media (max-width: 400px) {
+  .box {
+    flex: 1 1 100%; /* Full width */
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 0.5rem;
+  }
+
+  .box-button {
+    padding: 0.5em 1em;
+  }
+
+  .h2{
+    font-size: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-heading {
+    margin-top: 5%;
+  }
+}
 </style>

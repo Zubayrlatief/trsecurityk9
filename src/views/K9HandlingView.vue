@@ -6,57 +6,55 @@
     </div>
 
     <div class="d-flex container-1 align-items-start p-4 border-bottom">
-      <!-- Carousel -->
-      <div class="col-md-5 p-4 fade-in">
-        <div id="carouselExampleDark1" class="carousel carousel-dark slide">
-          <!-- Carousel Indicators -->
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
-          </div>
+  <!-- Carousel -->
+  <div class="col-md-5 p-4 fade-in">
+    <div id="carouselExampleDark1" class="carousel carousel-dark slide">
+      <!-- Carousel Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
 
-          <!-- Carousel Slides -->
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="10000">
-              <img src="https://zubayrlatief.github.io/Images-/439d2089-7549-4907-87db-6703e6acbc5a%20(1).png" class="d-block w-100" alt="First slide">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>First Carousel - Slide 1</h5>
-                <p>Some placeholder content for the first carousel.</p>
-              </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-              <img src="https://zubayrlatief.github.io/Images-/c40d56d7-7889-49bd-8277-a516f107ed70.JPG" class="d-block w-100" alt="Second slide">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>First Carousel - Slide 2</h5>
-                <p>Some placeholder content for the first carousel.</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="https://zubayrlatief.github.io/Images-/52546c1c-5dcc-435e-a6b4-9aba90b1a924.png" class="d-block w-100" alt="Third slide">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>First Carousel - Slide 3</h5>
-                <p>Some placeholder content for the first carousel.</p>
-              </div>
-            </div>
+      <!-- Carousel Slides -->
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="https://zubayrlatief.github.io/Images-/439d2089-7549-4907-87db-6703e6acbc5a%20(1).png" class="d-block w-100 carousel-image" alt="First slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First Carousel - Slide 1</h5>
+            <p>Some placeholder content for the first carousel.</p>
           </div>
-
-          <!-- Controls -->
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark1"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark1"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="https://zubayrlatief.github.io/Images-/c40d56d7-7889-49bd-8277-a516f107ed70.JPG" class="d-block w-100 carousel-image" alt="Second slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First Carousel - Slide 2</h5>
+            <p>Some placeholder content for the first carousel.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://zubayrlatief.github.io/Images-/52546c1c-5dcc-435e-a6b4-9aba90b1a924.png" class="d-block w-100 carousel-image" alt="Third slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First Carousel - Slide 3</h5>
+            <p>Some placeholder content for the first carousel.</p>
+          </div>
         </div>
       </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark1" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark1" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
 
       <!-- Boxes -->
       <div class="boxes-overlay col-md-6">
@@ -159,6 +157,11 @@ export default defineComponent({
   transform: translateY(0);
 }
 
+.carousel-image {
+  height: 400px; /* Set your desired fixed height */
+  object-fit: cover; /* Ensures the image covers the container without distortion */
+}
+
 /* Container Layout */
 .container-1 {
   display: flex;
@@ -170,6 +173,9 @@ export default defineComponent({
   border-radius: 5px;
   color: #fff;
 }
+
+
+
 
 /* General Styling */
 .bg-black {
