@@ -308,5 +308,8 @@ h1 span {
   .container-heading {
     margin-top: 5%;
   }
+  .content{
+    font-size: 1rem;
+  }
 }
 </style>
