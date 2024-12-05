@@ -8,7 +8,6 @@
           <h1 class="border-bottom">YOUR 24/7 SECURITY IS OUR PRIORITY</h1>
           <div class="button-section">
             <button @click="navigateToContact" class="box-button">GET IN TOUCH</button>
-            <button @click="navigateToServices" class="box-button">OUR SERVICES</button>
           </div>
         </div>
       </div>
@@ -102,11 +101,12 @@ export default defineComponent({
   position: absolute;
   top: 50%;
   right: 0;
-  transform: translateY(-20%);
+  transform: translateY(-50%); /* Centers vertically */
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-end; /* Align content to the right */
   align-items: center;
   padding: 10px;
+  width: 100%; /* Full width for proper responsiveness */
 }
 
 .content-container {
@@ -114,8 +114,10 @@ export default defineComponent({
   color: #fff;
   padding: 20px;
   text-align: center;
-  backdrop-filter: blur(0.2px);
-  width: 70%;
+  backdrop-filter: blur(5px); /* Smoothens the background */
+  max-width: 40%; /* Limit width to avoid overflowing */
+  margin-right: 5%; /* Add space from the right edge */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Add some elevation */
 }
 
 h1 {
@@ -157,59 +159,29 @@ h1 {
   color: grey;
 }
 
-.d-flex {
-  display: flex;
-  flex-wrap: wrap; /* Allow wrapping for smaller screens */
-}
-
-.box {
-  padding: 1rem;
-  margin: 0.5rem;
-  text-align: justify;
-  color: #ffffff;
-}
-
-.hidden {
-  opacity: 0;
-  transform: translateY(100px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Media Queries */
+/* Responsive Adjustments */
 @media (max-width: 1024px) {
+  .content-container {
+    max-width: 50%;
+    margin-right: 3%; /* Adjust space from the right */
+  }
+
   h1 {
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
-  }
-
-  .content-container {
-    width: 80%;
-  }
-
-  .button-section {
-    flex-direction: row; /* Align buttons in a row */
-    justify-content: space-between;
-  }
-
-  .box-button {
-    width: 48%; /* Adjust button width for alignment */
   }
 }
 
 @media (max-width: 768px) {
   .container-main {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center-align the content */
+    padding: 15px;
   }
 
   .content-container {
-    padding: 15px;
-    width: 90%;
+    max-width: 80%; /* Increase width for smaller screens */
+    margin-right: 0; /* Center-align */
   }
 
   h1 {
@@ -225,9 +197,10 @@ h1 {
 
 @media (max-width: 480px) {
   .content-container {
-    padding: 10px;
-    text-align: center;
     width: 95%;
+    max-width: none; /* Allow full width on smallest screens */
+    padding: 10px;
+    margin-right: 0; /* Center-align */
   }
 
   h1 {
@@ -244,4 +217,5 @@ h1 {
     font-size: 0.9rem;
   }
 }
+
 </style>

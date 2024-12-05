@@ -1,24 +1,28 @@
 <template>
-  <div class="container-heading ">
-    <h1>WHAT WE DELIVER ON</h1>
-    <h2 class="h2 p-4 border-bottom">TRUSTED GRADED SECURITY</h2>
-  </div>
+<div class="container-heading">
+  <h1 class="hidden">OUR BUSINESS MISSION</h1>
+  <h2 class="hidden border-bottom">TRUSTED GRADED SECURITY</h2>
+</div>
+
   <div class="container border-bottom ">
     <div class="boxes">
       <div class="box hidden">
         <div class="content">
+          <h3>ARMED RESPONSE</h3>
           Armed response services ensure rapid, professional protection against threats, providing highly trained personnel to safeguard businesses, homes, and critical assets.
           <button @click="navigateToRIASecurityView" class="box-button">Learn More</button>
         </div>
       </div>
       <div class="box hidden">
         <div class="content">
+          <h3>K9 HANDLING</h3>
           K9 handling services utilize trained dogs for detection, patrol, and protection, offering enhanced security solutions for businesses and critical sites.
           <button @click="navigateToK9HandlingView" class="box-button">Learn More</button>
         </div>
       </div>
       <div class="box hidden">
         <div class="content">
+          <h3>EVENT SECURITY</h3>
           Security installation services provide expert setup of advanced systems, including alarms, CCTV, and access control, ensuring comprehensive protection for properties.
           <button @click="navigateToSecuritySystemsView" class="box-button ">Learn More</button>
         </div>
@@ -104,52 +108,39 @@ export default {
   align-items: center;
 }
 
-.container-heading:hover h1,
-h2 {
-  transform: translate(30px, 30px) scale(1.1);
-  color: rgba(150, 150, 150, 0.3);
-  transition: all 0.3s ease-in-out;
+
+
+.hidden {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  padding: 1rem;
 }
 
-@keyframes floatingEffect {
-  0%,
-  100% {
-    transform: translate(20px, 20px);
-  }
-  50% {
-    transform: translate(25px, 25px);
-  }
-}
-
-h2,
-h1 {
-  animation: floatingEffect 3s infinite ease-in-out;
+/* Animation on intersecting */
+.hidden.show {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 /* Heading */
 h1 {
-  padding: 20px 50px;
   font-weight: 900;
   background-color: #000000;
   color: gray;
   font-family: 'Times New Roman', Times, serif;
   font-size: 2.5rem;
-  transform: skew(-20deg);
   display: inline-block;
   transition: all 0.5s ease;
   text-align: center;
   font-weight: bold;
+  margin-top: 4%;
 }
 
 .h2 {
   font-family: 'Times New Roman', Times, serif;
-  margin-bottom: -2%;
-  font-size: 2rem;
-}
+  font-size: 1rem;
 
-h1 span {
-  display: inline-block;
-  transform: skew(20deg);
 }
 
 /* Flexbox for boxes */
@@ -249,6 +240,19 @@ h1 span {
   border: #000000;
 }
 
+h3 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: gray;
+  text-align: center;
+  margin: 20px 0;
+  padding: 10px 20px;
+
+}
+
+
+
 /* Media Queries for Smaller Screens */
 @media (max-width: 1024px) {
   .box {
@@ -291,7 +295,7 @@ h1 span {
   }
 
   h1 {
-    font-size: 0.5rem;
+    font-size: 2rem;
   }
 
   .box-button {
@@ -299,15 +303,14 @@ h1 span {
   }
 
   .h2{
-    font-size: 0.5rem;
+    font-size: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
 
-  .container-heading {
-    margin-top: 5%;
-  }
+
   .content{
     font-size: 1rem;
   }
