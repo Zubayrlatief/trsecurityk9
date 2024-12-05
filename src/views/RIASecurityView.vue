@@ -5,7 +5,9 @@
       <div class="container-2">
         <img class="img" :src="img" alt="TR Security K9" />
       </div>
-      <h4 class="h1 fw-bold">DEDICATED TO THE SAFETY OF ALL OUR CLIENTS WE INCLUDE EVERY TYPE OF SECURITY SOLUTIONS</h4>
+      <h4 class="h1 fw-bold">
+        DEDICATED TO THE SAFETY OF ALL OUR CLIENTS WE INCLUDE EVERY TYPE OF SECURITY SOLUTIONS
+      </h4>
       <div class="container-1">
         <div class="boxes-overlay">
           <div class="box hidden">
@@ -32,24 +34,78 @@
         </div>
       </div>
 
-      <div class="d-flex">
-  <div class="p-2 flex-fill box hidden bg-black">
-    <h3>Protecting Industry and Homes with Excellence
-    </h3>
-    <p>
-      Our security company is dedicated to safeguarding both industrial and residential properties with unmatched expertise. For industrial security, we provide customized solutions to protect your facilities, equipment, and workforce. Our trained professionals ensure access control, perimeter protection, and surveillance to prevent unauthorized access and maintain operational integrity. In residential security, we prioritize your family’s safety by offering vigilant patrols, access control, and visible deterrence to create a secure environment. Trust us to deliver peace of mind through our proactive and responsive services tailored to meet your unique security needs.
-    </p>
-  </div>
-  <div class="p-2 flex-fill box hidden bg-black">
-    <h3>Securing Farms and Agricultural Assets</h3>
-    <p>
-      Agricultural security is vital to protect the backbone of our economy—our farms and resources. Our specialized agricultural guarding services are designed to safeguard your property, livestock, and equipment against theft, vandalism, and trespassing. With a deep understanding of the agricultural industry, our highly trained guards provide comprehensive solutions, including perimeter monitoring, access control, and surveillance. Focus on farming while we ensure the security of your agricultural investments, offering you peace of mind and uninterrupted operations.
-    </p>
-  </div>
-</div>
+      <div class="carousel-container p-2 flex-fill">
+          <div id="securityCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://zubayrlatief.github.io/Images-/security1.jpg"
+                  class="d-block w-100"
+                  alt="Security Image 1"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://zubayrlatief.github.io/Images-/security2.jpg"
+                  class="d-block w-100"
+                  alt="Security Image 2"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://zubayrlatief.github.io/Images-/security3.jpg"
+                  class="d-block w-100"
+                  alt="Security Image 3"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#securityCarousel"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#securityCarousel"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
 
+      <div class="d-flex flex-wrap align-items-start">
+        <div class="p-2 flex-fill box hidden bg-black">
+          <h3>Protecting Industry and Homes with Excellence</h3>
+          <p>
+            Our security company is dedicated to safeguarding both industrial and residential properties with unmatched
+            expertise. For industrial security, we provide customized solutions to protect your facilities, equipment,
+            and workforce. Our trained professionals ensure access control, perimeter protection, and surveillance to
+            prevent unauthorized access and maintain operational integrity. In residential security, we prioritize your
+            family’s safety by offering vigilant patrols, access control, and visible deterrence to create a secure
+            environment. Trust us to deliver peace of mind through our proactive and responsive services tailored to
+            meet your unique security needs.
+          </p>
+        </div>
+        <div class="p-2 flex-fill box hidden bg-black">
+          <h3>Securing Farms and Agricultural Assets</h3>
+          <p>
+            Agricultural security is vital to protect the backbone of our economy—our farms and resources. Our
+            specialized agricultural guarding services are designed to safeguard your property, livestock, and equipment
+            against theft, vandalism, and trespassing. With a deep understanding of the agricultural industry, our
+            highly trained guards provide comprehensive solutions, including perimeter monitoring, access control, and
+            surveillance. Focus on farming while we ensure the security of your agricultural investments, offering you
+            peace of mind and uninterrupted operations.
+          </p>
+        </div>
 
-   
+      </div>
     </div>
     <FooterComp />
   </div>
@@ -130,6 +186,14 @@ export default defineComponent({
   background-repeat: no-repeat;
   position: relative;
 }
+.carousel-container {
+  max-width: 100%;
+}
+.carousel-item img {
+  height: 300px;
+  object-fit: cover;
+}
+
 
 .boxes-overlay {
   position: absolute;
