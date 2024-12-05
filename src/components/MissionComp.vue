@@ -181,11 +181,11 @@ h1 span {
 
 /* Specific background images for each box */
 .box:nth-child(1) {
-  background-image: url('https://zubayrlatief.github.io/Images-/335061946_227326069704609_1086594109604870972_n.jpg'); /* Replace with your image path */
+  background-image: url('https://zubayrlatief.github.io/Images-/453209260_820975970014760_7992647634388668027_n%20(1).png'); /* Replace with your image path */
 }
 
 .box:nth-child(2) {
-  background-image: url('https://zubayrlatief.github.io/Images-/453209260_820975970014760_7992647634388668027_n%20(1).jpg'); /* Replace with your image path */
+  background-image: url('https://zubayrlatief.github.io/Images-/0c311717be90de50883a94690c9cb05d.jpg'); /* Replace with your image path */
 }
 
 .box:nth-child(3) {

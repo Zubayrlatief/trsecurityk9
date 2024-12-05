@@ -29,7 +29,7 @@
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="2000">
-              <img src="https://zubayrlatief.github.io/Images-/274cc50a-a231-4c7c-9a71-ac8a28ef18df.png" class="d-block w-100" alt="Second slide">
+              <img src="https://zubayrlatief.github.io/Images-/c40d56d7-7889-49bd-8277-a516f107ed70.JPG" class="d-block w-100" alt="Second slide">
               <div class="carousel-caption d-none d-md-block">
                 <h5>First Carousel - Slide 2</h5>
                 <p>Some placeholder content for the first carousel.</p>
@@ -178,6 +178,12 @@ export default defineComponent({
 }
 
 @media (max-width: 500px) {
+  .d-flex{
+
+    flex-direction: column;
+  }
+}
+@media (max-width: 700px) {
   .d-flex{
 
     flex-direction: column;
