@@ -30,70 +30,74 @@
               "Unmatched Armed Response Services: Protecting Your Home, Business, and Assets with Rapid, Professional,
               and Reliable Security Solutions 24/7."
             </div>
+            
           </div>
         </div>
       </div>
 
-      <div class="carousel-container p-2 flex-fill">
-          <div id="securityCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src="https://zubayrlatief.github.io/Images-/335061946_227326069704609_1086594109604870972_n%20(1).jpg"
-                  class="d-block w-100"
-                  alt="Security Image 1"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="https://zubayrlatief.github.io/Images-/219237737_4559314124078643_4043352918482986628_n.jpg"
-                  class="d-block w-100"
-                  alt="Security Image 2"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="https://zubayrlatief.github.io/Images-/security3.jpg"
-                  class="d-block w-100"
-                  alt="Security Image 3"
-                />
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#securityCarousel"
-              data-bs-slide="prev"
-            >
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#securityCarousel"
-              data-bs-slide="next"
-            >
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+      <div class="d-flex flex-row align-items-start flex-wrap">
+  <!-- Carousel Section -->
+  <div class="carousel-container flex-fill p-2">
+    <div id="securityCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://zubayrlatief.github.io/Images-/335061946_227326069704609_1086594109604870972_n%20(1).jpg"
+            class="d-block w-100"
+            alt="Security Image 1"
+          />
         </div>
+        <div class="carousel-item">
+          <img
+            src="https://zubayrlatief.github.io/Images-/219237737_4559314124078643_4043352918482986628_n.jpg"
+            class="d-block w-100"
+            alt="Security Image 2"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://zubayrlatief.github.io/Images-/190337722_4367801189896605_4328583546380313516_n.jpg"
+            class="d-block w-100"
+            alt="Security Image 3"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#securityCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#securityCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
 
-      <div class="d-flex flex-wrap align-items-start">
-        <div class="p-2 flex-fill box hidden bg-black">
-          <h3>Protecting Industry and Homes with Excellence</h3>
-          <p>
-            Our security company is dedicated to safeguarding both industrial and residential properties with unmatched
-            expertise. For industrial security, we provide customized solutions to protect your facilities, equipment,
-            and workforce. Our trained professionals ensure access control, perimeter protection, and surveillance to
-            prevent unauthorized access and maintain operational integrity. In residential security, we prioritize your
-            family’s safety by offering vigilant patrols, access control, and visible deterrence to create a secure
-            environment. Trust us to deliver peace of mind through our proactive and responsive services tailored to
-            meet your unique security needs.
-          </p>
-        </div>
-        <div class="p-2 flex-fill box hidden bg-black">
+  <!-- Text Section -->
+  <div class="text-container flex-fill p-2 bg-black text-light">
+    
+    <div class="p-3 flex-fill box hidden bg-black">
+    <h3>Protecting Industry and Homes with Excellence</h3>
+    <p>
+      Our security company is dedicated to safeguarding both industrial and residential properties with unmatched
+      expertise. For industrial security, we provide customized solutions to protect your facilities, equipment,
+      and workforce. Our trained professionals ensure access control, perimeter protection, and surveillance to
+      prevent unauthorized access and maintain operational integrity. In residential security, we prioritize your
+      family’s safety by offering vigilant patrols, access control, and visible deterrence to create a secure
+      environment. Trust us to deliver peace of mind through our proactive and responsive services tailored to
+      meet your unique security needs.
+    </p>
+    <div class="p-3 flex-fill box hidden bg-black">
           <h3>Securing Farms and Agricultural Assets</h3>
           <p>
             Agricultural security is vital to protect the backbone of our economy—our farms and resources. Our
@@ -104,8 +108,10 @@
             peace of mind and uninterrupted operations.
           </p>
         </div>
-
-      </div>
+  </div>
+  </div>
+</div>
+    
     </div>
     <FooterComp />
   </div>
@@ -186,12 +192,41 @@ export default defineComponent({
   background-repeat: no-repeat;
   position: relative;
 }
-.carousel-container {
-  max-width: 100%;
+.carousel-container,
+.text-container {
+  flex: 1 1 50%; /* Both sections take up 50% of the width */
+  max-width: 50%;
 }
+
+.text-container {
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .carousel-container,
+  .text-container {
+    flex: 1 1 100%; /* Stack vertically on smaller screens */
+    max-width: 100%;
+  }
+}
+
+
 .carousel-item img {
-  height: 300px;
+  height: 500px; /* Adjusted height for a smaller carousel */
   object-fit: cover;
+  width: 500px;
+}
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 500px; /* Adjust height for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-item img {
+    height: 400px; /* Further reduce height for very small screens */
+  }
 }
 
 
