@@ -35,6 +35,60 @@
       </div>
       
     </div>
+    <div class="container vh-40 my-5">
+  <div class="row align-items-center">
+    <!-- Carousel -->
+    <div class="col-md-6">
+      <div id="carouselExample" class="carousel slide hidden" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true"></button>
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://zubayrlatief.github.io/Images-/AdobeStock_206211186-scaled-2560x1280.webp" class="d-block w-100" alt="Slide 1">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First Slide</h5>
+              <p>Description for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://zubayrlatief.github.io/Images-/Electric-Fence-1024x640.jpg" class="d-block w-100" alt="Slide 2">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second Slide</h5>
+              <p>Description for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://zubayrlatief.github.io/Images-/cropped-view-of-person-typing-password-on-home-sec-2023-11-27-05-13-08-utc-1-scaled.jpg" class="d-block w-100" alt="Slide 3">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third Slide</h5>
+              <p>Description for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Text Section Next to Carousel -->
+    <div class="col-md-6 hidden">
+      <h3>Trusted Installation Services</h3>
+      <p>
+        We specialize in providing high-quality electric fencing installations that are tailored to meet the specific security needs of your property. 
+        We work closely with each client to assess their unique requirements and recommend solutions that offer the best protection. Whether it's a residential, commercial, or industrial property, our team has the expertise to design and install a system that provides maximum security.
+        <br/><br/>
+        In addition to installations, we offer ongoing maintenance and support services to ensure your system continues to function optimally. We take pride in offering a service that not only meets but exceeds industry standards, making us a trusted choice for security solutions.
+      </p>
+    </div>
+  </div>
+</div>
   </div>
   <FooterComp />
 </template>
@@ -48,7 +102,7 @@ import NavbarComp from '@/components/NavbarComp.vue';
 import FooterComp from '@/components/FooterComp.vue';
 
 export default defineComponent({
-  name: 'ArmedResponseView',
+  name: 'ArmedResponse',
   components: {
     NavbarComp,
     FooterComp,

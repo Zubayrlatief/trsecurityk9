@@ -5,7 +5,7 @@
       <img class="img" :src="img" alt="TR Security K9" />
       <div class="container-main">
         <div class="content-container">
-          <h1 class="border-bottom">YOUR 24/7 SECURITY IS OUR PRIORITY</h1>
+          <h1 class="border-bottom">YOUR 24/7 K9 GAURDING SOLUTIONS</h1>
           <div class="button-section">
             <button @click="navigateToContact" class="box-button">GET IN TOUCH</button>
           </div>
@@ -123,7 +123,8 @@ export default defineComponent({
 h1 {
   font-size: 2rem;
   font-family: 'Times New Roman', Times, serif;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 900;
 }
 
 .button-section {
@@ -158,6 +159,20 @@ h1 {
   background: #171717;
   color: grey;
 }
+
+.hidden {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  padding: 1rem;
+}
+
+/* Animation on intersecting */
+.hidden.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 
 /* Responsive Adjustments */
 @media (max-width: 1024px) {

@@ -5,6 +5,7 @@ import RIASecurityView from '@/views/RIASecurityView.vue'
 import K9HandlingView from '@/views/K9HandlingView.vue'
 import ContactView from '@/views/ContactView.vue'
 import SecuritySystemsView from '@/views/SecuritySystemsView.vue'
+import EventSecurityView from '@/views/EventSecurityView.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -13,30 +14,35 @@ const routes: Array<RouteRecordRaw> = [
     component: LandingpageView
   },
   {
-    path: '/ArmedResponseView',
+    path: '/ArmedResponse',
     name: 'ArmedResponseView',
     component: ArmedResponseView
   },
   {
-    path: '/SecuritySystemsView',
+    path: '/SecuritySystems',
     name: 'SecuritySystemsView',
     component: SecuritySystemsView
   },
   {
-    path: '/RIASecurityView',
+    path: '/RIASecurity',
     name: 'RIASecurityView',
     component: RIASecurityView
   },
   {
-    path: '/K9HandlingView',
+    path: '/K9Handling',
     name: 'K9Handling',
     component: K9HandlingView
   },
   {
-    path: '/ContactView',
+    path: '/Contact',
     name: 'ContactView',
     component: ContactView
   },
+  {
+    path: '/EventSecurity',
+    name: 'EventSecurityView',
+    component: EventSecurityView
+  }
 ]
 
 const router = createRouter({

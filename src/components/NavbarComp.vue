@@ -32,9 +32,10 @@
               SECURITY SERVICES
             </a>
             <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-              <li><a class="dropdown-item" href="/ArmedResponseView">ARMED RESPONSE</a></li>
-              <li><a class="dropdown-item" href="/K9HandlingView">K9 HANDLING</a></li>
-              <li><a class="dropdown-item" href="/RIASecurityView">RESIDENTIAL/INDUSTRIAL/AGRICULTURAL</a></li>
+              <li><a class="dropdown-item" href="/ArmedResponse">ARMED RESPONSE</a></li>
+              <li><a class="dropdown-item" href="/K9Handling">K9 HANDLING</a></li>
+              <li><a class="dropdown-item" href="/EventSecurity">EVENT SECURITY</a></li>
+              <li><a class="dropdown-item" href="/RIASecurity">RESIDENTIAL/INDUSTRIAL/AGRICULTURAL</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -49,11 +50,11 @@
               SECURITY SYSTEMS
             </a>
             <ul class="dropdown-menu" aria-labelledby="systemsDropdown">
-              <li><a class="dropdown-item" href="/SecuritySystemsView">ALARM MONITORING/ELECTRIC FENCING</a></li>
+              <li><a class="dropdown-item" href="/SecuritySystems">ALARM MONITORING/ELECTRIC FENCING</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/ContactView">CONTACT</a>
+            <a class="nav-link" href="/Contact">CONTACT</a>
           </li>
         </ul>
       </div>

@@ -5,7 +5,7 @@
       <div class="container-2">
         <img class="img" :src="img" alt="TR Security K9" />
       </div>
-      <h4 class="h1 fw-bold">
+      <h4 class="h1">
         DEDICATED TO THE SAFETY OF ALL OUR CLIENTS WE INCLUDE EVERY TYPE OF SECURITY SOLUTIONS
       </h4>
       <div class="container-1">
@@ -39,14 +39,14 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img
-                  src="https://zubayrlatief.github.io/Images-/security1.jpg"
+                  src="https://zubayrlatief.github.io/Images-/335061946_227326069704609_1086594109604870972_n%20(1).jpg"
                   class="d-block w-100"
                   alt="Security Image 1"
                 />
               </div>
               <div class="carousel-item">
                 <img
-                  src="https://zubayrlatief.github.io/Images-/security2.jpg"
+                  src="https://zubayrlatief.github.io/Images-/219237737_4559314124078643_4043352918482986628_n.jpg"
                   class="d-block w-100"
                   alt="Security Image 2"
                 />
@@ -197,7 +197,7 @@ export default defineComponent({
 
 .boxes-overlay {
   position: absolute;
-  top: 40%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -252,7 +252,10 @@ export default defineComponent({
 .h1{
   display: flex;
   justify-content: center;
-  margin-top: 4%;
+  margin: 4%;
+  border-bottom-style: groove;
+
+  border-bottom-width: 2px;
   text-align: center;
 }
 

@@ -27,6 +27,13 @@
           <button @click="navigateToSecuritySystemsView" class="box-button ">Learn More</button>
         </div>
       </div>
+      <div class="box hidden">
+        <div class="content">
+          <h3>EVENT SECURITY</h3>
+          Security installation services provide expert setup of advanced systems, including alarms, CCTV, and access control, ensuring comprehensive protection for properties.
+          <button @click="navigateToEventSecurityView" class="box-button ">Learn More</button>
+        </div>
+        </div>
     </div>
   </div>
 </template>
@@ -52,6 +59,10 @@ export default {
 
     const navigateToSecuritySystemsView = () => {
       router.push('/SecuritySystemsView');
+    };
+
+    const navigateToEventSecurityView = () => {
+      router.push('/EventSecurityView');
     };
 
     // Intersection Observer for animations
@@ -82,7 +93,8 @@ export default {
     return {
       navigateToRIASecurityView,
       navigateToK9HandlingView,
-      navigateToSecuritySystemsView
+      navigateToSecuritySystemsView,
+      navigateToEventSecurityView
     };
   }
 };
@@ -153,8 +165,8 @@ h1 {
 }
 
 .box {
-  flex: 1 1 calc(33.333% - 20px); /* 3 boxes per row, adjusts for gaps */
-  max-width: calc(33.333% - 20px);
+  flex: 1 1 calc(25% - 20px); /* 3 boxes per row, adjusts for gaps */
+  max-width: calc(325% - 20px);
   height: 400px;
   background-size: cover;
   background-position: center;
@@ -185,6 +197,9 @@ h1 {
   background-image: url('https://zubayrlatief.github.io/Images-/57336201_2435266096483467_1952572130822455296_n.jpg');
 }
 
+.box:nth-child(4) {
+  background-image: url('https://zubayrlatief.github.io/Images-/57336201_2435266096483467_1952572130822455296_n.jpg');
+}
 /* Animation on intersecting */
 .hidden.show {
   opacity: 1;
@@ -192,15 +207,15 @@ h1 {
 }
 
 .box-button {
-  margin-top: 3rem;
-  padding: 0.8em 1.2em;
+  margin-top: 1rem;
+  padding: 0.8em 1em;
   border-radius: 15px;
   transition: 0.4s ease-in-out;
   box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.2);
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
   border: none;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   background: #eb691d;
 }
 
