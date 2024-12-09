@@ -2,7 +2,7 @@
   <div>
     <NavbarComp />
     <div class="container-main bg-black p-4">
-      <h1 class="text-center">SPECIALIZING IN K9 HANDLING</h1>
+      <h1 class="text-center border-bottom">SPECIALIZING IN K9 HANDLING</h1>
     </div>
 
     <div class="d-flex container-1 align-items-start p-4 border-bottom">

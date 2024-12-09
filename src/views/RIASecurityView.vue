@@ -180,8 +180,8 @@ export default defineComponent({
 }
 
 .container-1 {
-  margin: 5%;
-  height: 40vh;
+ margin: 5%;
+  height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
