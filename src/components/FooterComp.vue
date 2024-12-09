@@ -49,25 +49,26 @@
 
             <!-- Grid columns for Products, Useful links, and Contact remain unchanged -->
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-              <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+              <h6 class="text-uppercase fw-bold mb-4">Pages</h6>
               <p><a href="/" class="text-reset">Home</a></p>
-              <p><a href="/AlarmMonitoringView" class="text-reset">Alarm Monitoring</a></p>
-              <p><a href="/ElectricFencingView" class="text-reset">Electric Fencing</a></p>
+              <p><a href="/ArmedResponse" class="text-reset">Alarm Response</a></p>
+              <p><a href="/K9Handling" class="text-reset">K9 Handling</a></p>
+              <p><a href="/SecuritySystems" class="text-reset">Security Systems</a></p>
+              <p><a href="/EventSecurity" class="text-reset">Event Security</a></p>
             </div>
 
             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
               <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
-              <p><a href="/ArmedResponseView" class="text-reset">Armed Response</a></p>
-              <p><a href="/k9HandlingView" class="text-reset">K9 Handling</a></p>
-              <p><a href="/RIASecurityView" class="text-reset">Residential/Industrial<br>Agricultural</a></p>
+              <p><a href="/EventSecurity" class="text-reset">Armed Response</a></p>
+              <p><a href="/RIASecurity" class="text-reset">Residential/Industrial/Agricultural</a></p>
+              <p><a href="/Contact" class="text-reset">Contact</a></p>
             </div>
 
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
               <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-              <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
-              <p><i class="fas fa-envelope me-3"></i> info@example.com</p>
-              <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-              <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+              <p><i class="fas fa-home me-3"></i> 14 Taurus Rd, Surrey Estate, Cape Town, 7764</p>
+              <p><i class="fas fa-envelope me-3"></i> info@trsecurityk9.co.za</p>
+              <p><i class="fas fa-phone me-3"></i>071 445 1316</p>
             </div>
           </div>
         </div>
@@ -75,8 +76,8 @@
 
       <!-- Copyright -->
       <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-        © 2021 Copyright:
-        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        © 2025 Copyright:
+        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">TRSECURITYK9</a>
       </div>
     </footer>
   </div>
