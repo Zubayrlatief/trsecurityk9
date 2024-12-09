@@ -27,7 +27,62 @@
         Agricultural security is vital to protect the backbone of our economy—our farms and resources. Our specialized agricultural guarding services are designed to safeguard your property, livestock, and equipment against theft, vandalism, and trespassing. With a deep understanding of the agricultural industry, our highly trained guards provide comprehensive solutions, including perimeter monitoring, access control, and surveillance. Focus on farming while we ensure the security of your agricultural investments, offering you peace of mind and uninterrupted operations.
       </p>
   </div>
+  
   </div>
+  
+  <h3 class="container-main text-center p-4">TRUSTED PARTNERS</h3>
+    <div id="card">
+      <div class="wrapper">
+        <div class="box-area">
+          <div class="box">
+            <img src="https://zubayrlatief.github.io/Images-/pedros-removebg-preview.png" alt="" class="sr" />
+            <div class="overlay">
+              <h3>KC AUTO</h3>
+            </div>
+          </div>
+          <div class="box">
+            <img src="https://zubayrlatief.github.io/Images-/images__1_-removebg-preview.png" alt="" class="sr" />
+            <div class="overlay">
+              <h3>The Car Bath</h3>
+            </div>
+          </div>
+          <div class="box">
+            <img src="https://zubayrlatief.github.io/Images-/muslim_hands-removebg-preview.png" alt="" class="sr" />
+            <div class="overlay">
+              <h3>Surf Emporium</h3>
+  
+            </div>
+          </div>
+          <div class="box">
+            <img src="https://zubayrlatief.github.io/Images-/sanzaf-removebg-preview.png" alt="" class="sr" />
+            <div class="overlay">
+              <h3>Surf Emporium</h3>
+            </div>
+          </div>
+          <div class="box">
+            <img src="https://zubayrlatief.github.io/Images-/The_Salvation_Army.svg-removebg-preview.png" alt="" class="sr" />
+            <div class="overlay">
+              <h3>Surf Emporium</h3>
+              <h5>Apr 2023 - present</h5>
+              <p>
+              </p>
+  
+            </div>
+          </div>
+          <div class="box">
+            <img src="https://zubayrlatief.github.io/Images-/logo/naklistan-removebg-preview.png" alt="" class="sr" />
+            <div class="overlay">
+            </div>
+          </div>
+          <div class="box">
+            <img src="https://zubayrlatief.github.io/Images-/gforce.png" alt="" class="sr" />
+            <div class="overlay">
+              <h3>Lc Studio</h3>=
+            </div>
+          </div>
+        </div>
+      </div></div>
+
   <FooterComp />
 </template>
 
@@ -53,10 +108,10 @@ export default defineComponent({
   setup() {
     const router = useRouter();
     const navigateToContact = () => {
-      router.push('/ContactView');
+      router.push('/Contact');
     };
     const navigateToServices = () => {
-      router.push('/ServicesView');
+      router.push('/Services');
     };
 
     let observer: IntersectionObserver | null = null;
@@ -95,6 +150,46 @@ export default defineComponent({
 .img {
   width: 100%;
   height: auto;
+}
+
+.box-area {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+
+.box {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+}
+
+.box img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.overlay {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(transparent, #1c1c1c 58%);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size:2px;
+  transition: height 0.5s;
 }
 
 .container-main {

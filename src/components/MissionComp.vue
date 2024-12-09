@@ -10,32 +10,35 @@
         <div class="content">
           <h3>ARMED RESPONSE</h3>
           Armed response services ensure rapid, professional protection against threats, providing highly trained personnel to safeguard businesses, homes, and critical assets.
-          <button @click="navigateToRIASecurityView" class="box-button">Learn More</button>
+          <button @click="navigateToRIASecurity" class="box-button">Learn More</button>
         </div>
       </div>
       <div class="box hidden">
         <div class="content">
           <h3>K9 HANDLING</h3>
           K9 handling services utilize trained dogs for detection, patrol, and protection, offering enhanced security solutions for businesses and critical sites.
-          <button @click="navigateToK9HandlingView" class="box-button">Learn More</button>
+          <button @click="navigateToK9Handling" class="box-button">Learn More</button>
         </div>
       </div>
       <div class="box hidden">
         <div class="content">
           <h3>EVENT SECURITY</h3>
           Security installation services provide expert setup of advanced systems, including alarms, CCTV, and access control, ensuring comprehensive protection for properties.
-          <button @click="navigateToSecuritySystemsView" class="box-button ">Learn More</button>
+          <button @click="navigateToSecuritySystems" class="box-button ">Learn More</button>
         </div>
       </div>
       <div class="box hidden">
         <div class="content">
           <h3>EVENT SECURITY</h3>
           Security installation services provide expert setup of advanced systems, including alarms, CCTV, and access control, ensuring comprehensive protection for properties.
-          <button @click="navigateToEventSecurityView" class="box-button ">Learn More</button>
+          <button @click="navigateToEventSecurity" class="box-button ">Learn More</button>
         </div>
         </div>
+        
     </div>
+    
   </div>
+
 </template>
 
 <script>
@@ -49,20 +52,20 @@ export default {
     const router = useRouter();
 
     // Define the navigation functions
-    const navigateToK9HandlingView = () => {
-      router.push('/K9HandlingView');
+    const navigateToK9Handling = () => {
+      router.push('/K9Handling');
     };
 
-    const navigateToRIASecurityView = () => {
-      router.push('/RIASecurityView');
+    const navigateToRIASecurity = () => {
+      router.push('/RIASecurity');
     };
 
-    const navigateToSecuritySystemsView = () => {
-      router.push('/SecuritySystemsView');
+    const navigateToSecuritySystems = () => {
+      router.push('/SecuritySystems');
     };
 
-    const navigateToEventSecurityView = () => {
-      router.push('/EventSecurityView');
+    const navigateToEventSecurity = () => {
+      router.push('/EventSecurity');
     };
 
     // Intersection Observer for animations
@@ -91,10 +94,10 @@ export default {
 
     // Return the navigation methods to be used in the template
     return {
-      navigateToRIASecurityView,
-      navigateToK9HandlingView,
-      navigateToSecuritySystemsView,
-      navigateToEventSecurityView
+      navigateToRIASecurity,
+      navigateToK9Handling,
+      navigateToSecuritySystems,
+      navigateToEventSecurity
     };
   }
 };
@@ -109,7 +112,7 @@ export default {
   align-items: center;
   justify-content: center;
   max-width: 100%;
-  min-height: 70vh;
+  min-height: 60vh;
   padding: 5%;
   background-color: #000000;
 }
