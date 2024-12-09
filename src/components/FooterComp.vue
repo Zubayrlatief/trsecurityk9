@@ -110,11 +110,10 @@ export default {
       L.marker(coords, { icon: redPinIcon }).addTo(map);
     };
 
-    // Map: TR SECURITY K9 Location
-    createMapWithMarker('map1', [-33.968703121089696, 18.547481163277297]); // Updated coordinates
+    // Map: TR SECURITY K9 Location - Updated Coordinates
+    createMapWithMarker('map1', [-33.97091177910423, 18.547099432812733]); // Coordinates for the new address
   },
 };
-
 </script>
 
 <style scoped>
