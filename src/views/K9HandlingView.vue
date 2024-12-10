@@ -24,22 +24,16 @@
         <div class="carousel-item active" data-bs-interval="10000">
           <img src="https://zubayrlatief.github.io/Images-/439d2089-7549-4907-87db-6703e6acbc5a%20(1).png" class="d-block w-100 carousel-image" alt="First slide">
           <div class="carousel-caption d-none d-md-block">
-            <h5>First Carousel - Slide 1</h5>
-            <p>Some placeholder content for the first carousel.</p>
           </div>
         </div>
         <div class="carousel-item" data-bs-interval="2000">
           <img src="https://zubayrlatief.github.io/Images-/c40d56d7-7889-49bd-8277-a516f107ed70.JPG" class="d-block w-100 carousel-image" alt="Second slide">
           <div class="carousel-caption d-none d-md-block">
-            <h5>First Carousel - Slide 2</h5>
-            <p>Some placeholder content for the first carousel.</p>
           </div>
         </div>
         <div class="carousel-item">
           <img src="https://zubayrlatief.github.io/Images-/52546c1c-5dcc-435e-a6b4-9aba90b1a924.png" class="d-block w-100 carousel-image" alt="Third slide">
           <div class="carousel-caption d-none d-md-block">
-            <h5>First Carousel - Slide 3</h5>
-            <p>Some placeholder content for the first carousel.</p>
           </div>
         </div>
       </div>
@@ -86,18 +80,17 @@
     <div class="container mt-5">
       <div class="row">
         <div class="col-md-6 box bg-black text-white p-4 hidden">
-          <h3>Protecting Industry and Homes with Excellence</h3>
-          <p>
-            Our security company is dedicated to safeguarding both industrial and residential properties with unmatched
-            expertise. For industrial security, we provide customized solutions to protect your facilities, equipment, and
-            workforce.
-          </p>
-        </div>
-        <div class="col-md-6 box bg-black text-white p-4 hidden">
-          <h3>Securing Farms and Agricultural Assets</h3>
-          <p>
-            Agricultural security is vital to protect the backbone of our economy—our farms and resources.
-          </p>
+     <h3>Protecting Industries and Homes with Excellence</h3>
+<p>
+  Our security company is committed to safeguarding both industrial and residential properties with unparalleled expertise. For industrial security, we offer tailored solutions to protect your facilities, equipment, and workforce from any potential threats.
+</p>
+</div>
+<div class="col-md-6 box bg-black text-white p-4 hidden">
+  <h3>Securing Farms and Agricultural Assets</h3>
+  <p>
+    Agricultural security plays a critical role in protecting the backbone of our economy—our farms and agricultural resources. We provide specialized solutions to ensure your assets are safe from theft, vandalism, and other threats.
+  </p>
+
         </div>
       </div>
     </div>

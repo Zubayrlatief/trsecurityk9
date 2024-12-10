@@ -1,43 +1,50 @@
+
 <template>
-<div class="container-heading">
-  <h1 class="hidden">OUR BUSINESS MISSION</h1>
-  <h2 class="hidden border-bottom">TRUSTED GRADED SECURITY</h2>
-</div>
+  <div class="container-heading">
+    <img class="background-image" src="https://zubayrlatief.github.io/Images-/TRsecurityK9-logo.png" alt="Background Decorative Image" />
+    <h1 class="hidden">OUR BUSINESS MISSION</h1>
+    <h2 class="hidden border-bottom">TRUSTED GRADED SECURITY</h2>
+  </div>
+
 
   <div class="container border-bottom ">
     <div class="boxes">
       <div class="box hidden">
         <div class="content">
-          <h3>ARMED RESPONSE</h3>
-          Armed response services ensure rapid, professional protection against threats, providing highly trained personnel to safeguard businesses, homes, and critical assets.
+          <h3 class="border-bottom">ARMED RESPONSE</h3>
+          <p>Armed response ensures rapid, professional protection against threats, providing highly trained personnel to safeguard businesses, homes, and assets.</p>
           <button @click="navigateToRIASecurity" class="box-button">Learn More</button>
         </div>
       </div>
       <div class="box hidden">
         <div class="content">
-          <h3>K9 HANDLING</h3>
-          K9 handling services utilize trained dogs for detection, patrol, and protection, offering enhanced security solutions for businesses and critical sites.
+          <h3 class="border-bottom"> DOG K9 HANDLING</h3>
+          <p>K9 handling services utilize trained dogs for detection, patrol, and protection, offering enhanced security solutions for businesses and critical sites.</p>
           <button @click="navigateToK9Handling" class="box-button">Learn More</button>
         </div>
       </div>
       <div class="box hidden">
         <div class="content">
-          <h3>EVENT SECURITY</h3>
-          Security installation services provide expert setup of advanced systems, including alarms, CCTV, and access control, ensuring comprehensive protection for properties.
+          <h3 class="border-bottom">EVENT SECURITY</h3>
+          <p>
+            Event security involves providing professional, on-site security personnel to ensure the safety and security of attendees, staff, and property during events of all sizes.</p>
           <button @click="navigateToSecuritySystems" class="box-button ">Learn More</button>
         </div>
       </div>
       <div class="box hidden">
         <div class="content">
-          <h3>EVENT SECURITY</h3>
-          Security installation services provide expert setup of advanced systems, including alarms, CCTV, and access control, ensuring comprehensive protection for properties.
+          <h3 class="border-bottom">SECURITY SYSTEMS</h3>
+        <p>Security installation services provide expert setup of advanced systems, including alarms, CCTV, and access control, ensuring comprehensive protection for properties.</p>
           <button @click="navigateToEventSecurity" class="box-button ">Learn More</button>
         </div>
         </div>
+      
         
     </div>
     
+    
   </div>
+  
 
 </template>
 
@@ -109,6 +116,7 @@ export default {
 .container {
   display: flex;
   flex-direction: column;
+  position: sticky;
   align-items: center;
   justify-content: center;
   max-width: 100%;
@@ -121,8 +129,21 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #000000;
+  position: relative; /* Ensure container is positioned relative for absolute positioning */
+  padding: 1rem;
+  width: 100%;
+  min-height: 30vh; /* Optional: Set minimum height for the container */
 }
-
+.background-image {
+  position: absolute; /* Position the image absolutely inside the container */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Cover the full height */
+  object-fit: cover; /* Ensure the image covers the entire container */
+  z-index: -1; /* Place the image behind the text */
+}
 
 
 .hidden {
@@ -138,24 +159,28 @@ export default {
   transform: translateX(0);
 }
 
-/* Heading */
-h1 {
-  font-weight: 900;
-  background-color: #000000;
-  color: gray;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 2.5rem;
-  display: inline-block;
-  transition: all 0.5s ease;
-  text-align: center;
+h1, h2 {
+  color: white; /* Change text color for better contrast */
+  z-index: 1; /* Ensure text is above the image */
+  position: relative; /* Position text above the background image */
   font-weight: bold;
-  margin-top: 4%;
+  text-align: center;
+  padding: 1rem;
 }
 
-.h2 {
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 1rem;
+h1 {
+  font-size: 3rem;
+}
 
+h2 {
+  font-size: 2rem;
+  border-bottom: 2px solid white; /* Add a white border for the h2 */
+}
+
+.container-heading h1, .container-heading h2 {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better contrast */
+  padding: 0.5rem;
+  border-radius: 10px; /* Optional: rounded corners for the text block */
 }
 
 /* Flexbox for boxes */
@@ -163,14 +188,14 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
-  padding: 5%;
+  gap: 10px;
+  padding: 2%;
 }
 
 .box {
   flex: 1 1 calc(25% - 20px); /* 3 boxes per row, adjusts for gaps */
   max-width: calc(325% - 20px);
-  height: 400px;
+  height: 450px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -259,10 +284,10 @@ h1 {
 }
 
 h3 {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.8rem;
   font-weight: bold;
-  color: gray;
+  color: rgb(255, 255, 255);
   text-align: center;
   margin: 20px 0;
   padding: 10px 20px;

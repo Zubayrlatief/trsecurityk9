@@ -179,7 +179,6 @@
   
   <style scoped>
   
-  /* Animations */
   .hidden {
     opacity: 0;
     transform: translateY(50px);

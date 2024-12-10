@@ -5,28 +5,16 @@
       <!-- Section: Social media -->
       <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
         <!-- Left -->
-        <div class="me-5 d-none d-lg-block">
-          <span>Get connected with us on social networks:</span>
-        </div>
         <!-- Right -->
         <div>
-          <a href="#" class="me-4 text-reset">
+          <a href="https://www.facebook.com/profile.php?id=100063070937148" class="me-4 text-reset">
             <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="#" class="me-4 text-reset">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="#" class="me-4 text-reset">
-            <i class="fab fa-google"></i>
           </a>
           <a href="#" class="me-4 text-reset">
             <i class="fab fa-instagram"></i>
           </a>
           <a href="#" class="me-4 text-reset">
             <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="#" class="me-4 text-reset">
-            <i class="fab fa-github"></i>
           </a>
         </div>
       </section>
@@ -49,19 +37,12 @@
 
             <!-- Grid columns for Products, Useful links, and Contact remain unchanged -->
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-              <h6 class="text-uppercase fw-bold mb-4">Pages</h6>
+              <h6 class="text-uppercase fw-bold mb-4">SERVICES</h6>
               <p><a href="/" class="text-reset">Home</a></p>
               <p><a href="/ArmedResponse" class="text-reset">Alarm Response</a></p>
               <p><a href="/K9Handling" class="text-reset">K9 Handling</a></p>
               <p><a href="/SecuritySystems" class="text-reset">Security Systems</a></p>
               <p><a href="/EventSecurity" class="text-reset">Event Security</a></p>
-            </div>
-
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-              <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
-              <p><a href="/EventSecurity" class="text-reset">Armed Response</a></p>
-              <p><a href="/RIASecurity" class="text-reset">Residential/Industrial/Agricultural</a></p>
-              <p><a href="/Contact" class="text-reset">Contact</a></p>
             </div>
 
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">

@@ -2,12 +2,15 @@
   <div>
     <NavbarComp />
     <div class="main-container">
-      <div class="container-2">
-        <img class="img" :src="img" alt="TR Security K9" />
-      </div>
+      <!-- Move heading to the top -->
       <h4 class="h1">
         DEDICATED TO THE SAFETY OF ALL OUR CLIENTS WE INCLUDE EVERY TYPE OF SECURITY SOLUTIONS
       </h4>
+      
+      <div class="container-2">
+        <img class="img" :src="img" alt="TR Security K9" />
+      </div>
+      
       <div class="container-1">
         <div class="boxes-overlay">
           <div class="box hidden">
@@ -30,93 +33,90 @@
               "Unmatched Armed Response Services: Protecting Your Home, Business, and Assets with Rapid, Professional,
               and Reliable Security Solutions 24/7."
             </div>
-            
           </div>
         </div>
       </div>
 
       <div class="d-flex flex-row align-items-start flex-wrap">
-  <!-- Carousel Section -->
-  <div class="carousel-container flex-fill p-2">
-    <div id="securityCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img
-            src="https://zubayrlatief.github.io/Images-/335061946_227326069704609_1086594109604870972_n%20(1).jpg"
-            class="d-block w-100"
-            alt="Security Image 1"
-          />
+        <!-- Carousel Section -->
+        <div class="carousel-container flex-fill p-2">
+          <div id="securityCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://zubayrlatief.github.io/Images-/335061946_227326069704609_1086594109604870972_n%20(1).jpg"
+                  class="d-block w-100"
+                  alt="Security Image 1"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://zubayrlatief.github.io/Images-/219237737_4559314124078643_4043352918482986628_n.jpg"
+                  class="d-block w-100"
+                  alt="Security Image 2"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://zubayrlatief.github.io/Images-/190337722_4367801189896605_4328583546380313516_n.jpg"
+                  class="d-block w-100"
+                  alt="Security Image 3"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#securityCarousel"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#securityCarousel"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
-        <div class="carousel-item">
-          <img
-            src="https://zubayrlatief.github.io/Images-/219237737_4559314124078643_4043352918482986628_n.jpg"
-            class="d-block w-100"
-            alt="Security Image 2"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            src="https://zubayrlatief.github.io/Images-/190337722_4367801189896605_4328583546380313516_n.jpg"
-            class="d-block w-100"
-            alt="Security Image 3"
-          />
+
+        <!-- Text Section -->
+        <div class="text-container flex-fill p-2 bg-black text-light">
+          <div class="p-3 flex-fill box hidden bg-black">
+            <h3 class="text-white" >Protecting Industry and Homes with Excellence</h3>
+            <p>
+              Our security company is dedicated to safeguarding both industrial and residential properties with unmatched
+              expertise. For industrial security, we provide customized solutions to protect your facilities, equipment,
+              and workforce. Our trained professionals ensure access control, perimeter protection, and surveillance to
+              prevent unauthorized access and maintain operational integrity. In residential security, we prioritize your
+              family’s safety by offering vigilant patrols, access control, and visible deterrence to create a secure
+              environment. Trust us to deliver peace of mind through our proactive and responsive services tailored to
+              meet your unique security needs.
+            </p>
+          </div>
+
+          <div class="p-3 flex-fill box hidden bg-black">
+            <h3 class="text-white">Securing Farms and Agricultural Assets</h3>
+            <p>
+              Agricultural security is vital to protect the backbone of our economy—our farms and resources. Our
+              specialized agricultural guarding services are designed to safeguard your property, livestock, and equipment
+              against theft, vandalism, and trespassing. With a deep understanding of the agricultural industry, our
+              highly trained guards provide comprehensive solutions, including perimeter monitoring, access control, and
+              surveillance. Focus on farming while we ensure the security of your agricultural investments, offering you
+              peace of mind and uninterrupted operations.
+            </p>
+          </div>
         </div>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#securityCarousel"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#securityCarousel"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </div>
-
-  <!-- Text Section -->
-  <div class="text-container flex-fill p-2 bg-black text-light">
-    
-    <div class="p-3 flex-fill box hidden bg-black">
-    <h3>Protecting Industry and Homes with Excellence</h3>
-    <p>
-      Our security company is dedicated to safeguarding both industrial and residential properties with unmatched
-      expertise. For industrial security, we provide customized solutions to protect your facilities, equipment,
-      and workforce. Our trained professionals ensure access control, perimeter protection, and surveillance to
-      prevent unauthorized access and maintain operational integrity. In residential security, we prioritize your
-      family’s safety by offering vigilant patrols, access control, and visible deterrence to create a secure
-      environment. Trust us to deliver peace of mind through our proactive and responsive services tailored to
-      meet your unique security needs.
-    </p>
-    <div class="p-3 flex-fill box hidden bg-black">
-          <h3>Securing Farms and Agricultural Assets</h3>
-          <p>
-            Agricultural security is vital to protect the backbone of our economy—our farms and resources. Our
-            specialized agricultural guarding services are designed to safeguard your property, livestock, and equipment
-            against theft, vandalism, and trespassing. With a deep understanding of the agricultural industry, our
-            highly trained guards provide comprehensive solutions, including perimeter monitoring, access control, and
-            surveillance. Focus on farming while we ensure the security of your agricultural investments, offering you
-            peace of mind and uninterrupted operations.
-          </p>
-        </div>
-  </div>
-  </div>
-</div>
-    
     </div>
     <FooterComp />
   </div>
 </template>
-
 
 
 <script lang="ts">
@@ -180,19 +180,24 @@ export default defineComponent({
 }
 
 .container-1 {
- margin: 5%;
-  height: 30vh;
+  height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url('https://zubayrlatief.github.io/Images-/example-background.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
+  margin-bottom: 30px; /* Added margin-bottom to create space between the boxes and the carousel */
 }
-.carousel-container,
+
+.carousel-container {
+  flex: 1 1 50%; /* Both sections take up 50% of the width */
+  max-width: 50%;
+}
+
+
+
+p{
+  font-size: 0.9rem;
+}
 .text-container {
   flex: 1 1 50%; /* Both sections take up 50% of the width */
   max-width: 50%;
@@ -223,16 +228,15 @@ export default defineComponent({
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 425px) {
   .carousel-item img {
     height: 400px; /* Further reduce height for very small screens */
   }
 }
 
-
 .boxes-overlay {
   position: absolute;
-  top: 20%;
+  top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -299,7 +303,7 @@ export default defineComponent({
 }
 
 h4,h3{
-  color: gray;
+  color: rgb(255, 255, 255);
   font-family: 'Times New Roman', Times, serif;
 }
 
@@ -336,38 +340,47 @@ h4,h3{
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 430px) {
   .container-3 {
-    left: 5%;
     width: 90%;
-    top: 45%;
-    font-size: 1.4rem;
-    padding: 10px;
+    top: 2%;
+    font-size: 0.8rem;
+    padding: 5px;
   }
 
   .boxes-overlay {
     flex-direction: column;
-    gap: 15px;
-    margin-top: 40%;
-    margin-bottom: 80%;
+    gap: 10px;
+    font: 0.3rem;
+    margin-top: -20%;
   }
 
+  .fw-bold{
+    font-size: 0.8rem;
+  }
+  .content{
+    padding: 2;
+    font-size: 0.6rem;
+  }
   .box {
-    flex: 1 1 auto;
-    padding: 5px;
+    padding: 15px;
     
     
+  }
+
+  h4{
+    
+    font-size: 1.6rem;
   }
 
   h1 {
     font-size: 1.4rem;
   }
   .container-1{
-    
-  margin: 20%;
+  
   }
   .d-flex{
-    margin-top: 50%;
+    margin-top: 2%;
   }
   p{
     font-size: 0.8rem;

@@ -30,7 +30,8 @@
   
   </div>
   
-  <h3 class="container-main text-center p-4">TRUSTED PARTNERS</h3>
+  
+  <h3 class=" text-center p-4 border-top text-white">TRUSTED PARTNERS</h3>
     <div id="card">
       <div class="wrapper">
         <div class="box-area">
@@ -43,30 +44,28 @@
           <div class="box">
             <img src="https://zubayrlatief.github.io/Images-/images__1_-removebg-preview.png" alt="" class="sr" />
             <div class="overlay">
-              <h3>The Car Bath</h3>
             </div>
           </div>
           <div class="box">
             <img src="https://zubayrlatief.github.io/Images-/muslim_hands-removebg-preview.png" alt="" class="sr" />
-            <div class="overlay">
-              <h3>Surf Emporium</h3>
+            <div class="overlay">=
   
             </div>
           </div>
           <div class="box">
             <img src="https://zubayrlatief.github.io/Images-/sanzaf-removebg-preview.png" alt="" class="sr" />
-            <div class="overlay">
-              <h3>Surf Emporium</h3>
+            <div class="overlay">=
             </div>
           </div>
           <div class="box">
             <img src="https://zubayrlatief.github.io/Images-/The_Salvation_Army.svg-removebg-preview.png" alt="" class="sr" />
             <div class="overlay">
-              <h3>Surf Emporium</h3>
-              <h5>Apr 2023 - present</h5>
-              <p>
-              </p>
   
+            </div>
+          </div>
+          <div class="box">
+            <img src="https://zubayrlatief.github.io/Images-/gforce.png" alt="" class="sr" />
+            <div class="overlay">
             </div>
           </div>
           <div class="box">
@@ -74,12 +73,7 @@
             <div class="overlay">
             </div>
           </div>
-          <div class="box">
-            <img src="https://zubayrlatief.github.io/Images-/gforce.png" alt="" class="sr" />
-            <div class="overlay">
-              <h3>Lc Studio</h3>=
-            </div>
-          </div>
+          
         </div>
       </div></div>
 
@@ -145,6 +139,7 @@ export default defineComponent({
 <style scoped>
 .main {
   position: relative;
+  
 }
 
 .img {
@@ -200,7 +195,7 @@ export default defineComponent({
   display: flex;
   justify-content: flex-end; /* Align content to the right */
   align-items: center;
-  padding: 10px;
+  padding: 5px;
   width: 100%; /* Full width for proper responsiveness */
 }
 
@@ -217,9 +212,11 @@ export default defineComponent({
 
 h1 {
   font-size: 2rem;
-  font-family: 'Times New Roman', Times, serif;
+  
+  font-family:'Roboto', sans-serif;
   margin-bottom: 1rem;
   font-weight: 900;
+
 }
 
 .button-section {
@@ -228,29 +225,32 @@ h1 {
   gap: 10px;
 }
 
+
 .box-button {
-  padding: 10px;
-  border-radius: 8px;
-  font-weight: bold;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 1rem;
-  background: #171717;
-  color: rgb(128, 128, 128);
-  transition: 0.3s ease-in-out;
+  margin-top: 1rem;
+  padding: 0.8em 1em;
+  border-radius: 15px;
+  transition: 0.4s ease-in-out;
+  box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.2);
   letter-spacing: 0.1em;
   border: none;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  background: #eb691d;
 }
 
 .box-button:hover {
   cursor: pointer;
-  letter-spacing: 0.3em;
-  transform: translateY(-0.5em);
+  letter-spacing: 0.5em;
+  transform: translateY(-0.8em);
   background: #171717;
   color: #eb691d;
 }
 
 .box-button:active {
-  transform: translateY(-0.4em);
+  letter-spacing: 0.4em;
+  transition: 0.1s all;
+  transform: translateY(-0.6em);
   background: #171717;
   color: grey;
 }
