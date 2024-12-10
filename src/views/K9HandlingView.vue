@@ -22,7 +22,7 @@
       <!-- Carousel Slides -->
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="10000">
-          <img src="https://zubayrlatief.github.io/Images-/439d2089-7549-4907-87db-6703e6acbc5a%20(1).png" class="d-block w-100 carousel-image" alt="First slide">
+          <img src="https://zubayrlatief.github.io/Images-/0c311717be90de50883a94690c9cb05d.png" class="d-block w-100 carousel-image" alt="First slide">
           <div class="carousel-caption d-none d-md-block">
           </div>
         </div>
@@ -53,45 +53,43 @@
       <!-- Boxes -->
       <div class="boxes-overlay col-md-6">
         <div class="box hidden">
-          <h4 class="fw-bold">RESIDENTIAL SECURITY</h4>
-          <div class="content">
-            "Unmatched Armed Response Services: Protecting Your Home, Business, and Assets with Rapid, Professional, and
-            Reliable Security Solutions 24/7."
-          </div>
-        </div>
-        <div class="box hidden">
-          <h4 class="fw-bold">AGRICULTURAL SECURITY</h4>
-          <div class="content">
-            "Unmatched Armed Response Services: Protecting Your Home, Business, and Assets with Rapid, Professional, and
-            Reliable Security Solutions 24/7."
-          </div>
-        </div>
-        <div class="box hidden">
-          <h4 class="fw-bold">INDUSTRIAL SECURITY</h4>
-          <div class="content">
-            "Unmatched Armed Response Services: Protecting Your Home, Business, and Assets with Rapid, Professional, and
-            Reliable Security Solutions 24/7."
-          </div>
-        </div>
+  <h4 class="fw-bold">RESIDENTIAL SECURITY</h4>
+  <div class="content">
+    "Expert K9-Enhanced Residential Security: Ensuring the safety of your family and property with highly trained K9 units and 24/7 professional protection."
+  </div>
+</div>
+<div class="box hidden">
+  <h4 class="fw-bold">AGRICULTURAL SECURITY</h4>
+  <div class="content">
+    "Specialized K9-Aided Agricultural Security: Protecting your farms and resources from theft and vandalism with unmatched precision and reliability."
+  </div>
+</div>
+<div class="box hidden">
+  <h4 class="fw-bold">INDUSTRIAL SECURITY</h4>
+  <div class="content">
+    "Advanced K9-Integrated Industrial Security: Safeguarding your facilities and workforce with cutting-edge canine-assisted protection and tailored solutions."
+  </div>
+</div>
+
       </div>
     </div>
 
     <!-- Updated Section Below -->
     <div class="container mt-5">
       <div class="row">
-        <div class="col-md-6 box bg-black text-white p-4 hidden">
-     <h3>Protecting Industries and Homes with Excellence</h3>
-<p>
-  Our security company is committed to safeguarding both industrial and residential properties with unparalleled expertise. For industrial security, we offer tailored solutions to protect your facilities, equipment, and workforce from any potential threats.
-</p>
+        <div class="col-md-6 box bg-black text-white p-4">
+  <h3>Specializing in K9 Handling for Enhanced Security</h3>
+  <p>
+    Our security services excel in leveraging highly trained K9 units to provide unmatched protection for industrial and residential properties. With our expert handlers and skilled K9s, we ensure superior detection, deterrence, and response to potential threats, delivering peace of mind to our clients.
+  </p>
 </div>
 <div class="col-md-6 box bg-black text-white p-4 hidden">
-  <h3>Securing Farms and Agricultural Assets</h3>
+  <h3>K9 Solutions for Farms and Agricultural Security</h3>
   <p>
-    Agricultural security plays a critical role in protecting the backbone of our economy—our farms and agricultural resources. We provide specialized solutions to ensure your assets are safe from theft, vandalism, and other threats.
+    Protecting agricultural assets is a priority, and our K9 units are adept at safeguarding farms from theft, vandalism, and other risks. With their keen senses and specialized training, our K9 teams are an invaluable resource for ensuring the safety and integrity of your agricultural investments.
   </p>
+</div>
 
-        </div>
       </div>
     </div>
 

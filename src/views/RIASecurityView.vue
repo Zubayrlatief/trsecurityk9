@@ -320,6 +320,10 @@ h4,h3{
   h1 {
     font-size: 1.8rem;
   }
+  p{
+    font-size: 0.8rem;
+  }
+  
 }
 
 @media (max-width: 768px) {
