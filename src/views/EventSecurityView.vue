@@ -1,11 +1,11 @@
 <template>
     <div>
       <NavbarComp />
-      <div class="container-main bg-black p-4">
+      <div class="container-main bg-black p-4 m-2" >
         <h1 class="text-center border-bottom">WE OFFER EVENT SECURITY</h1>
       </div>
   
-      <div class="d-flex container-1 align-items-start p-4 border-bottom">
+      <div class="d-flex container-1 align-items-center p-4  border-bottom">
         <!-- Carousel -->
         <div class="col-md-5 p-4 fade-in">
           <div id="carouselExampleDark1" class="carousel carousel-dark slide">
@@ -24,22 +24,16 @@
               <div class="carousel-item active" data-bs-interval="10000">
                 <img src="https://zubayrlatief.github.io/Images-/83cd0f81-14bc-4fa0-b9b3-091ada7e51bd.png" class="d-block w-100 carousel-image" alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>First Carousel - Slide 1</h5>
-                  <p>Some placeholder content for the first carousel.</p>
                 </div>
               </div>
               <div class="carousel-item" data-bs-interval="2000">
                 <img src="https://zubayrlatief.github.io/Images-/230773814_4578479108828811_8950874723867153206_n.jpg" class="d-block w-100 carousel-image" alt="Second slide">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>First Carousel - Slide 2</h5>
-                  <p>Some placeholder content for the first carousel.</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="https://zubayrlatief.github.io/Images-/52546c1c-5dcc-435e-a6b4-9aba90b1a924.png" class="d-block w-100 carousel-image" alt="Third slide">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>First Carousel - Slide 3</h5>
-                  <p>Some placeholder content for the first carousel.</p>
                 </div>
               </div>
             </div>
@@ -87,35 +81,26 @@
           <div class="box">
             <img src="https://zubayrlatief.github.io/Images-/pedros-removebg-preview.png" alt="" class="sr" />
             <div class="overlay">
-              <h3>KC AUTO</h3>
             </div>
           </div>
           <div class="box">
             <img src="https://zubayrlatief.github.io/Images-/images__1_-removebg-preview.png" alt="" class="sr" />
             <div class="overlay">
-              <h3>The Car Bath</h3>
             </div>
           </div>
           <div class="box">
             <img src="https://zubayrlatief.github.io/Images-/muslim_hands-removebg-preview.png" alt="" class="sr" />
             <div class="overlay">
-              <h3>Surf Emporium</h3>
-  
             </div>
           </div>
           <div class="box">
             <img src="https://zubayrlatief.github.io/Images-/sanzaf-removebg-preview.png" alt="" class="sr" />
             <div class="overlay">
-              <h3>Surf Emporium</h3>
             </div>
           </div>
           <div class="box">
             <img src="https://zubayrlatief.github.io/Images-/The_Salvation_Army.svg-removebg-preview.png" alt="" class="sr" />
             <div class="overlay">
-              <h3>Surf Emporium</h3>
-              <h5>Apr 2023 - present</h5>
-              <p>
-              </p>
   
             </div>
           </div>
@@ -127,7 +112,6 @@
           <div class="box">
             <img src="https://zubayrlatief.github.io/Images-/gforce.png" alt="" class="sr" />
             <div class="overlay">
-              <h3>Lc Studio</h3>=
             </div>
           </div>
         </div>
@@ -238,12 +222,19 @@
   position: relative;
   overflow: hidden;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  
+}
+
+.content,h4{
+  display: flex;
+  justify-self: center;
+  text-align: center;
+  margin: 4px;
 }
 
 .box img {
   width: 100%;
   border-radius: 10px;
-  display: block;
   transition: transform 0.5s;
 }
 
@@ -252,19 +243,16 @@
   height: 0;
   background: linear-gradient(transparent, #1c1c1c 58%);
   border-radius: 10px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  overflow: hidden;
+  justify-content: center;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
   padding: 0 40px;
   text-align: center;
   font-size:2px;
   transition: height 0.5s;
 }
+
 
 .overlay h3 {
   font-weight: 500;

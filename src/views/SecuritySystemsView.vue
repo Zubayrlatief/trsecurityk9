@@ -2,7 +2,7 @@
   <NavbarComp />
   <div class="container-main bg-black text-white">
     <div class="container-1">
-      <h1 class="h1 text-center">
+      <h1 class="h1 text-center  text-white">
         WE OFFER STATE OF THE ART INSTALLATIONS
       </h1>
     </div>
@@ -12,10 +12,10 @@
   <div class="container py-5 bg-black text-white border-bottom">
     <div class="row text-center">
       <div class="col-md-4 hidden">
-        <h3>Trusted Installation Services</h3>
-        <p>We specialize in providing high-quality electric fencing installations that are tailored to meet the specific security needs of your property...</p>
+        <h3 class="text-white">Trusted Installation Services</h3>
+        <p class="text-white">We specialize in providing quality electric fencing installations that are tailored to specific security needs of your property...</p>
         <!-- Redirect button to contact page -->
-        <router-link to="/ContactView">
+        <router-link to="/Contact">
           <button class="box-button">Get a Quote</button>
         </router-link>
       </div>
@@ -23,7 +23,7 @@
         <h3>Electric Fencing Solution</h3>
         <p>Our Electric Fencing Installations provide an advanced security measure that acts as a strong deterrent to intruders...</p>
         <!-- Redirect button to contact page -->
-        <router-link to="/ContactView">
+        <router-link to="/Contact">
           <button class="box-button">Get a Quote</button>
         </router-link>
       </div>
@@ -31,7 +31,7 @@
         <h3>Alarm Monitoring Service</h3>
         <p>In addition to electric fencing, we offer comprehensive Alarm Monitoring services that provide constant surveillance...</p>
         <!-- Redirect button to contact page -->
-        <router-link to="/ContactView">
+        <router-link to="/Contact">
           <button class="box-button">Get a Quote</button>
         </router-link>
       </div>
@@ -53,22 +53,16 @@
           <div class="carousel-item active">
             <img src="https://zubayrlatief.github.io/Images-/AdobeStock_206211186-scaled-2560x1280.webp" class="d-block w-100" alt="Slide 1">
             <div class="carousel-caption d-none d-md-block">
-              <h5>First Slide</h5>
-              <p>Description for the first slide.</p>
             </div>
           </div>
           <div class="carousel-item">
             <img src="https://zubayrlatief.github.io/Images-/Electric-Fence-1024x640.jpg" class="d-block w-100" alt="Slide 2">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Second Slide</h5>
-              <p>Description for the second slide.</p>
             </div>
           </div>
           <div class="carousel-item">
             <img src="https://zubayrlatief.github.io/Images-/cropped-view-of-person-typing-password-on-home-sec-2023-11-27-05-13-08-utc-1-scaled.jpg" class="d-block w-100" alt="Slide 3">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Third Slide</h5>
-              <p>Description for the third slide.</p>
             </div>
           </div>
         </div>
@@ -83,8 +77,8 @@
 
     <!-- Text Section Next to Carousel -->
     <div class="col-md-6 hidden">
-      <h3>Trusted Installation Services</h3>
-      <p>
+      <h3 class="text-white">Trusted Installation Services</h3>
+      <p class="text-white">
         We specialize in providing high-quality electric fencing installations that are tailored to meet the specific security needs of your property. 
         We work closely with each client to assess their unique requirements and recommend solutions that offer the best protection. Whether it's a residential, commercial, or industrial property, our team has the expertise to design and install a system that provides maximum security.
         <br/><br/>

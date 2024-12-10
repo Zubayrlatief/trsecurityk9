@@ -62,7 +62,7 @@
       ></textarea>
     </div>
     <div class="text-center">
-      <button type="submit" class="btn btn-primary px-5 py-2 fw-bold text-uppercase">
+      <button type="submit" class=" box-button px-5 py-2 fw-bold text-uppercase">
         Submit
       </button>
     </div>
@@ -97,6 +97,28 @@ export default defineComponent({
   border-radius: 8px;
 }
 
+
+.box-button {
+  margin-top: 3rem;
+  padding: 0.6em;
+  border-radius: 15px;
+  transition: .4s ease-in-out;
+  box-shadow: inset 1px 2px 5px rgba(0,0,0,0.2);
+  letter-spacing: 0.2em;
+  border: none;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.2rem;
+  background: #eb691d;
+  
+}
+
+.box-button:hover {
+  cursor:pointer;
+  letter-spacing: 0.5em;
+  transform: translateY(-0.8em);
+  background: #171717;
+  color: #eb691d;
+}
 .contact-form .form-label {
   font-size: 0.9rem;
   font-weight: 600;

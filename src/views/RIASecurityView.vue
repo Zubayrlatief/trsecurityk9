@@ -196,7 +196,7 @@ export default defineComponent({
 
 
 p{
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 .text-container {
   flex: 1 1 50%; /* Both sections take up 50% of the width */
@@ -293,7 +293,7 @@ p{
   justify-content: center;
   margin: 4%;
   border-bottom-style: groove;
-
+  font-family: 'Times New Roman', Times, serif;
   border-bottom-width: 2px;
   text-align: center;
 }
